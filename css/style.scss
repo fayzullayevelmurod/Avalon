@@ -55,6 +55,8 @@ button {
 
 
 // import file
+@import 'mixin';
+@import 'vars';
 @import 'header';
 @import 'footer';
 @import 'responsive';
