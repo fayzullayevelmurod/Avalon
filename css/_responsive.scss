@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1210px) {
+    .header {
+        .header_left {
+            @include flex-center;
+            gap: 13px;
+        }
+
+        .logo {
+            img {
+                width: 106px;
+            }
+        }
+
+        .burger_open {
+            display: block;
+        }
+
+        .nav {
+            display: none;
+        }
+
+        .header_phone {
+            display: none;
+        }
+
+        .phone_icon {
+            display: flex;
+        }
+
+        .shop_icon ,
+        .user_icon,
+        .phone_icon {
+            width: 32px;
+            height: 32px;
+
+            img {
+                width: 19px;
+            }
+        }
+    }
+}
