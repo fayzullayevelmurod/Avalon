@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+    display: inline-block;
+}
+
+span, label {
+    display: inline-block;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.main_container {
+    max-width: 1360px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+// index page
+
+// index page
+
+// about page
+
+// about page
+
+
+
+
+
+
+
+
+
+
+// import file
+@import 'header';
+@import 'footer';
+@import 'responsive';
