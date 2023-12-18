@@ -30,10 +30,32 @@ button {
   background: transparent;
 }
 
+.under_container {
+  max-width: 1340px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .main_container {
-  max-width: 1360px;
+  max-width: 1210px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.home_title {
+  color: var(--Black, #1B1B1B);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.accent_btn {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .header {

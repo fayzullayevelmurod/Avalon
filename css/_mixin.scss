@@ -1,4 +1,10 @@
 // mixin
+@mixin flex-full-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @mixin flex-start {
     display: flex;
     align-items: start;
@@ -7,6 +13,10 @@
 @mixin flex-center {
     display: flex;
     align-items: center;
+}
+
+@mixin transition {
+    transition: .2s ease;
 }
 
 // mixin

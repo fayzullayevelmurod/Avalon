@@ -11,6 +11,10 @@ a {
     display: inline-block;
 }
 
+img {
+    max-width: 100%;
+}
+
 span, label {
     display: inline-block;
 }
@@ -30,11 +34,73 @@ button {
     background: transparent;
 }
 
+.under_container {
+    max-width: 1340px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
 .main_container {
-    max-width: 1360px;
+    max-width: 1210px;
     padding: 0 20px;
     margin: 0 auto;
 }
+
+// global block
+.home_title {
+    color: $--Black;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main_title {
+    color: $--Black;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.accent_btn {
+    color: $--White;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 10px 16px;
+    background-color: $--Accent;
+    @include flex-full-center;
+}
+
+.input_light {
+    border-radius: 10px;
+    border: 1px solid $--Border;
+    background: $--White;
+    padding: 0 15px;
+    height: 44px;
+    color: $--Text;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.5;
+}
+
+.accent_link {
+    color: $--Accent;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-decoration-line: underline;
+}
+
+.description {
+    color: $--Text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+// global block
 
 
 // index page
