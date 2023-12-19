@@ -1,3 +1,21 @@
+// home swipper
+let swiper = new Swiper(".homeSwiper", {
+  slidesPerView: "auto",
+  cssMode: true,
+  navigation: {
+    nextEl: ".home_btn_right",
+    prevEl: ".home_btn_left",
+  },
+  pagination: {
+    el: ".home_swiper_pagination",
+    clickable: true,
+  },
+  mousewheel: true,
+  keyboard: true,
+});
+// home swipper
+
+
 // input mask
 let phoneInput = document.getElementById('phone');
 let myForm = document.forms.myForm;

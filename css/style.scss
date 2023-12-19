@@ -6,6 +6,8 @@ $--Text: #404040;
 $--Accent: #C13222;
 $--White: #FFF;
 $--Border: #C5C5C5;
+
+$--Footer-Border: #313131FF;
 // colors
 
 // mixin
@@ -94,6 +96,13 @@ button {
     line-height: normal;
 }
 
+.home_slider_title {
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 60px;
+    color: $--Black;
+}
+
 .accent_btn {
     color: $--White;
     font-size: 14px;
@@ -137,7 +146,137 @@ button {
 
 
 // index page
+.home {
+    padding-top: 64px;
 
+    .homeSwiper {
+        position: relative;
+        @include flex-center;
+        justify-content: space-between;
+    }
+
+    .home_swiper_btn {
+        cursor: pointer;
+        position: absolute;
+        z-index: 3;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: $--White;
+        @include flex-full-center;
+    }
+
+    .home_btn_left {
+        left: 15px;
+    }
+
+    .home_btn_right {
+        right: 15px;
+    }
+
+    .swiper-button-disabled {
+        opacity: 0.7;
+        cursor: auto;
+    }
+
+    .swiper-wrapper {
+        position: relative;
+
+    }
+    .home_swiper_pagination {
+        position: absolute;
+        bottom: 32px;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        @include flex-full-center;
+
+        .swiper-pagination-bullet {
+            background-color: #E5E0E1FF;
+            width: 12px;
+            height: 12px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: $--White;
+        }
+    }
+
+    .swiper-slide {
+        position: relative;
+
+        .home_media_img {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: auto;
+            // object-fit: cover;
+            z-index: -1;
+        }
+
+        .home_dekstop_img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    }
+
+    .home_text {
+        padding: 150px 0 119px 0;
+
+        span {
+            margin-bottom: 4px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background: $--Black;
+            color: $--White;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        .main_title {
+            max-width: 424px;
+            margin-bottom: 16px;
+            font-size: 55px;
+        }
+
+        h6 {
+            color: $--Black;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 48px;
+        }
+
+        .home_btns {
+            @include flex-center;
+            gap: 24px;
+        }
+
+        .accent_btn {
+            width: 200px;
+            border-radius: 10px;
+            // padding: 12px 0;
+        }
+
+        .light_btn {
+            @include flex-full-center;
+            border-radius: 10px;
+            background-color: $--White;
+            color: $--Black;
+            color: #1B1B1B;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: normal;
+            padding: 13px 0;
+            width: 200px;
+        }
+    }
+}
 // index page
 
 // about page

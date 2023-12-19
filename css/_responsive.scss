@@ -38,4 +38,131 @@
             }
         }
     }
+
+    .home {
+        .main_container {
+            padding: 0 35px;
+        }
+    }
+
+    .footer {
+        .footer_top_right {
+            gap: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .footer {
+        .under_container {
+            padding: 0 35px;
+        }
+        .footer_top {
+            padding: 35px 0 10px 0;
+            flex-direction: column-reverse;
+
+            .footer_top_right {
+                gap: 40px;
+                flex-direction: column-reverse;
+            }
+
+            .footer_top_left {
+                a {
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+
+                p {
+                    max-width: 100%;
+                }
+            }
+
+            .policy_link {
+                margin-bottom: 40px;
+                display: block;
+            }
+
+            .footer_contact {
+                order: 3;
+            }
+
+            .footer_catalog {
+                order: 2;
+            }
+
+            .footer_information {
+                order: 1;
+            }
+        }
+
+        .footer_bottom {
+            border-top: 0;
+            padding: 0 0 40px 0;
+            a {
+                display: none;
+            }
+
+            p {
+                font-size: 10px;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home {
+        background: linear-gradient(90deg, #B7B3B5 0%, #C0B6B9 21.23%, #CBC2C5 50.84%, #BFBEC3 100%);
+        .homeSwiper {
+            .home_swiper_btn {
+                display: none ;
+            }
+        }
+
+        .swiper-slide {
+            .home_dekstop_img {
+                display: none;
+            }
+            .home_media_img {
+                display: block;
+            }
+        }
+
+        .home_text {
+            padding: 316px 0 67px 0;
+            span {
+                font-size: 13px;
+            }
+
+            .main_title {
+                font-size: 35px;
+                font-weight: 600;
+                line-height: 38px;
+                margin-bottom: 8px;
+            }
+
+            h6 {
+                font-size: 25px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .home  {
+        .home_text {
+            .home_btns {
+                flex-direction: column;
+                gap: 9px;
+            }
+
+            .accent_btn,
+            .light_btn {
+                width: 100%;
+            }
+        }
+    }
 }

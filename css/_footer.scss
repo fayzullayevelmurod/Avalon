@@ -1,0 +1,115 @@
+.footer {
+    padding-top: 100px;
+    background-color: $--Black;
+
+    .footer_top {
+        padding: 40px 0 49px 0;
+        @include flex-start;
+        justify-content: space-between;
+    }
+
+    .policy_link {
+        display: none;
+        color: $--White;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+
+    .footer_bottom {
+        border-top: 1px solid $--Footer-Border;
+        padding: 24px 0;
+        
+        .under_container {
+            @include flex-center;
+            justify-content: space-between;
+        }
+
+        a {
+            color: $--White;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: normal;
+            text-decoration-line: underline;
+        }
+
+        p {
+            color: $--White;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    .footer_top_left {
+        a {
+            color: $--White;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 16px;
+        }
+
+        p {
+            max-width: 286px;
+            color: $--White;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 21px;
+            opacity: 0.8;
+        }
+    }
+
+    .footer_top_right {
+        @include flex-start;
+        gap: 70px;
+
+        h6 {
+            color: $--White;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .footer_link, 
+        .footer_contact_link {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        } 
+    }
+
+    .footer_link_item {
+        a {
+            color: $--White;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+            opacity: 0.5;
+            @include transition;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .footer_contact_item {
+        a {
+            @include flex-center;
+            gap: 8px;
+            color: $--White;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: normal;
+            @include transition;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
