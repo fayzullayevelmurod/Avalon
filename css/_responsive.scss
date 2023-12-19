@@ -45,6 +45,16 @@
         }
     }
 
+    .category_product {
+        .category_left_card {
+            width: 300px;
+        }
+
+        .category_right_card {
+            width: 100%;
+        }
+    }
+
     .footer {
         .footer_top_right {
             gap: 30px;
@@ -60,6 +70,62 @@
 }
 
 @media only screen and (max-width: 992px) {
+
+    .product_category_top {
+        .main_container {
+            flex-direction: column;
+
+            .product_category_top_card {
+                width: 100%;
+            }
+        }
+    }
+
+    .category_product {
+
+        .category_title {
+            font-size: 30px;
+            margin-bottom: 24px;
+        }
+
+        .category_product_in {
+            flex-direction: column;
+            gap: 16px;
+
+            h3 {
+                font-size: 25px;
+            }
+
+            .accent_btn {
+                padding: 8px 16px;
+                font-size: 13px;
+            }
+        }
+
+        .category_right_cards {
+            gap: 16px;
+            flex-direction: column;
+        }
+
+        .category_left_card {
+            background-image: url('../images/category_left_media.png');
+            width: 100%;
+            padding: 35px 16px;
+        }
+
+        .right_card_two {
+            background-image: url('../images/category_right2_media.png');
+        }
+
+        .category_right_card_end {
+            background-image: url('../images/category_right3_media.png');
+        }
+
+        .category_right_card {
+            padding: 35px 16px;
+        }
+    }
+    
     .footer {
         .under_container {
             padding: 0 35px;
@@ -169,6 +235,33 @@
             .accent_btn,
             .light_btn {
                 width: 100%;
+            }
+        }
+    }
+
+    .product_category_top {
+        .main_container {
+
+            .top_card_one {
+                background-image: url('../images/category_top_media1.png');
+                background-position: center;
+            }
+
+            .top_card_two {
+                background-image: url('../images/category_top_media2.png');
+                background-position: center;
+            }
+
+            .product_category_top_card {
+                padding: 40px 18px 0 18px;
+
+                p {
+                    margin-bottom: 16px;
+                }
+
+                a {
+                    padding-bottom: 238px;
+                }
             }
         }
     }
