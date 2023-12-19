@@ -1,3 +1,26 @@
+// burger
+
+let menu_bg = document.querySelector('.menu_bg');
+let menu_mobile = document.querySelector('.menu_mobile');
+let burger_open = document.querySelector('.burger_open');
+
+burger_open.addEventListener('click', () => {
+  menu_mobile.classList.add('active');
+  menu_bg.classList.add('active');
+});
+
+menu_bg.addEventListener('click', () => {
+  menu_mobile.classList.remove('active');
+  menu_bg.classList.remove('active');
+});
+
+menu_mobile.addEventListener('click', () => {
+  menu_mobile.classList.remove('active');
+  menu_bg.classList.remove('active');
+});
+
+// burger
+
 // home swipper
 let swiper = new Swiper(".homeSwiper", {
   slidesPerView: "auto",

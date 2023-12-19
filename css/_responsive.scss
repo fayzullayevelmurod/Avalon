@@ -52,6 +52,13 @@
     }
 }
 
+@media only screen and (min-width: 1210px) {
+    .menu_bg ,
+    .menu_mobile {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     .footer {
         .under_container {
