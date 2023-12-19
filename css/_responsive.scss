@@ -130,6 +130,16 @@
         .under_container {
             padding: 0 35px;
         }
+
+        .footer_top_right {
+            .footer_link {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 16px;
+            }
+        }
+
         .footer_top {
             padding: 35px 0 10px 0;
             flex-direction: column-reverse;
@@ -181,6 +191,7 @@
                 font-weight: 400;
                 line-height: normal;
             }
+
         }
     }
 }

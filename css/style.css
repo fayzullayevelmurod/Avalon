@@ -526,7 +526,6 @@ button {
 }
 
 .footer {
-  padding-top: 100px;
   background-color: #1B1B1B;
 }
 .footer .footer_top {
@@ -717,6 +716,12 @@ button {
   }
   .footer .under_container {
     padding: 0 35px;
+  }
+  .footer .footer_top_right .footer_link {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
   }
   .footer .footer_top {
     padding: 35px 0 10px 0;
