@@ -67,6 +67,15 @@ button {
     background: transparent;
 }
 
+address {
+    font-style: normal;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
 .under_container {
     max-width: 1340px;
     padding: 0 10px;
@@ -102,6 +111,7 @@ button {
     padding: 10px 16px;
     background-color: $--Accent;
     @include flex-full-center;
+    border-radius: 10px;
 }
 
 .input_light {
@@ -133,6 +143,70 @@ button {
     line-height: 24px;
 }
 
+.tab_item {
+    display: none;
+}
+
+@keyframes tabActive {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.tab_item.active {
+    display: block;
+    animation: tabActive .2s linear 1;
+}
+
+@keyframes tabEndActive {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.tab_item.end-active {
+    display: block;
+    animation: tabEndActive .2s linear 1;
+}
+
+.checkbox {
+	user-select: none;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+    color: $--Text;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+
+	input[type="checkbox"] {
+		display: none;
+	}
+
+	.checkked {
+		display: none;
+	}
+
+    img {
+        width: 17px;
+    }
+}
+.checkbox.active {
+	img {
+		display: none;
+	}
+	.checkked {
+		display: block;
+	}
+}
 // global block
 
 
@@ -148,12 +222,462 @@ button {
 
 
 
+// Contact home
+.contact_home {
+    margin: 56px 0;
+
+    .main_container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    a.map {
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+
+        img {
+            height: 425px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    address {
+        color: $--Black;
+        line-height: normal;
+
+        .title {
+            font-size: 25px;
+            font-weight: 700;
+            margin: 32px 0 26px;
+        }
+
+        span {
+            font-size: 18px;
+            font-weight: 600;
+            opacity: 0.5;
+            margin-bottom: 5px;
+        }
+
+        a {
+            display: block;
+            font-size: 22px;
+            font-weight: 500;
+            
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+// Contact home end
+
+// Contact form 
+.contact_form {
+    background: linear-gradient(180deg, #FEFEFC 0%, #FEF9F5 51.89%, #F1E8E1 100%), linear-gradient(180deg, #FAFAFA 0%, #FAFAFA 100%);
+    padding: 56px 0;
+    margin-bottom: 56px;
+
+    .main_container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 48px;
+    }
+
+    .right_block {
+        width: 600px;
+    }
+
+    .inputs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 12px 12.7px;
+        margin-bottom: 16px;
+
+        .form_group {
+            width: calc(50% - 12.7px / 2);
+
+            &:last-child {
+                width: 100%;
+            }
+        }
+
+        input {
+            width: 100%;
+            color: $--Text;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: normal;
+        }
+        
+        label {
+            color: $--Text;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 8px;
+        }
+
+        textarea {
+            border-radius: 5px;
+            border: 1px solid var(--Border, #C5C5C5);
+            background: #FFF;
+            height: 120px;
+            width: 100%;
+            resize: none;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: normal;
+            padding: 16px 13px;
+            outline: none;
+        }
+    }
+
+    .accent_btn {
+        border-radius: 10px;
+        width: 200px;
+    }
+
+    .title {
+        color: $--Accent;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 16px;
+    }
+}
+// Contact form end
 
 
+// Auth 
+.auth {
+    background-image: url('../images/auth_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 130px;
+    padding-bottom: 253px;
+    position: relative;
+    z-index: 1;
+
+    .left_link {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        span {
+            color: $--White;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+    &_form {
+        background: linear-gradient(180deg, #FAFAFA 0%, #FAFAFA 100%);
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 18px;
+        padding: 40px 94px 53px 95px;
+        width: 570px;
+        margin: 206px auto 0;
+
+        .form_group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            color: $--Text;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 8px;
+        }
+        
+        input:not(input[type="checkbox"]) {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid $--Border;
+            background: $--White;
+            padding: 16px 13px 17px;
+            color: $--Black;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .checkbox {
+            margin-bottom: 16px;
+            font-weight: 500;
+
+            img {
+                width: 20px;
+            }
+        }
+
+        .accent_btn {
+            width: 100%;
+        }
+
+        .register_btn {
+            margin-top: 16px;
+        }
+
+        .link_wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 16px;
+        }
+    }
+
+    .tab {
+        &_head {
+            display: flex;
+            gap: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid $--Border;
+            margin-bottom: 27px;
+
+            button {
+                width: 50%;
+                padding: 14px 24px;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: normal;
+                background: #FFF;
+                color: $--Text;
+            }
+            
+            button.active {
+                background: $--Accent;
+                color: $--White;
+            }
+        }
+    }
+
+}
+// Auth end
 
 
+// Personal area 
+.personal_area {
+    .main_container {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 150px;
+        gap: 50px;
+    }
+
+    .nav_block {
+        display: flex;
+        flex-direction: column;
+        width: 272px;
+
+        a:not(.login) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 5px;
+            border: 1px solid $--Border;
+            padding: 8px;
+            background: var(--Grey, linear-gradient(180deg, #FAFAFA 0%, #FAFAFA 100%));
+            margin-bottom: 8px;
+
+            span {
+                color: $--Black;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: normal;
+            }
+
+        }
+        
+        a:not(.login).active {
+            background: $--Accent;
+            border-color: transparent;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background: black;
+            }
+
+            svg path {
+                fill: white;
+                stroke: white;
+            }
+
+            span {
+                color: white;
+            }
+        }
+
+        .login {
+            border-radius: 10px;
+            border: 1px solid $--Accent;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $--Accent;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 56px;
+        }
+    }
+
+    &_content {
+        width: calc(100% - 322px);
+    }
+
+    .content_card {
+        border-radius: 10px;
+        background: var(--Grey, linear-gradient(180deg, #FAFAFA 0%, #FAFAFA 100%));
+        border: 1px solid $--Border;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    }
+
+        
+    .avatar {
+        width: 110px;
+        height: 110px;
+        flex-shrink: 0;
+        background: #3A4754;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $--White;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .name {
+        color: $--Black;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .main_card {
+        padding: 30px;
+
+        &:first-child {
+            margin-bottom: 26px;
+        }
+
+        &_head {
+            display: flex;
+            align-items: center;
+            gap: 34px;
+            margin-bottom: 24px;
+        }
+    
+        .data {
+            .description {
+                margin-top: 8px;
+            }
+        }
+    
+        .accent_link {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    
+        &_foot {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            .user_data {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+            }
+        }
+    }
+
+    .profile_card {
+        padding: 32px 24px;
+
+        &_head {
+            display: flex;
+            align-items: center;
+            gap: 21px;
+            margin-bottom: 40px;
+        }
+
+        .data {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        &_foot {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .card_item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+
+            &:last-child {
+                width: 100%;
+            }
+
+            .user_data {
+                color: $--Text;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+
+                span {
+                    display: block;
+                    margin-top: 4px;
+                    font-weight: 700;
+                }
+
+                a {
+                    font-weight: 700;
+                    margin-top: 4px;
+                    display: block;
+                    text-decoration-line: underline;
+                }
+            }
+        }
+    }
+}
+
+.main_area {
+    margin-bottom: 187px;
+}
+
+.profile_area {
+    margin-bottom: 315px;
+}
+// Personal area end
 
 // import file
 @import 'header';
 @import 'footer';
 @import 'responsive';
+@import 'right_gaes_responsive.scss';
