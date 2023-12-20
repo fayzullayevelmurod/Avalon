@@ -113,7 +113,7 @@ try {
   // home swipper
   let swiper_one = new Swiper(".homeSwiper", {
     slidesPerView: "auto",
-    cssMode: true,
+    // effect: "fade",
     navigation: {
       nextEl: ".home_btn_right",
       prevEl: ".home_btn_left",
