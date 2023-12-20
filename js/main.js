@@ -16,6 +16,17 @@
 // });
 // // input mask
 
+const items = document.querySelectorAll('.accordion');
+
+items.forEach((item) => {
+  const header = item.querySelector('.accordion_btn');
+  const content = item.querySelector('.accordion_body');
+
+  header.addEventListener('click', () => {
+    content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
+  });
+});
+
 let tabs = document.querySelectorAll('.tab');
 if (tabs.length) {
   tabs.forEach(tab => {
@@ -166,14 +177,14 @@ try {
   let result = document.getElementById('result');
 
   phoneInput.addEventListener('input', function (e) {
-      let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
-      e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+    let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+    e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
   });
 
-  myForm.addEventListener('submit', function(e) {
+  myForm.addEventListener('submit', function (e) {
     phoneInput.value = phoneInput.value.replace(/\D/g, '');
-    result.innerText = phoneInput.value; 
-    
+    result.innerText = phoneInput.value;
+
     e.preventDefault();
   });
   // input mask

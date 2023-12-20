@@ -204,6 +204,12 @@ address {
   line-height: normal;
 }
 
+.accordion_body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
 .home {
   padding-top: 64px;
 }
@@ -1173,6 +1179,125 @@ address {
   margin-bottom: 315px;
 }
 
+.purchase {
+  margin-bottom: 250px;
+}
+.purchase .btn_success {
+  border-radius: 5px;
+  background: #296C00;
+  padding: 7px 10px;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+}
+.purchase .btn_gray {
+  border-radius: 5px;
+  background: #A8A8A8;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 7px 10px;
+}
+.purchase .btn_danger {
+  border-radius: 5px;
+  background: #C13222;
+  padding: 7px 10px;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+}
+.purchase .accordion {
+  padding: 28px 24px 29px;
+}
+.purchase .accordion:not(:last-child) {
+  margin-bottom: 16px;
+}
+.purchase .accordion_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.purchase .accordion_head_left_block {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.purchase .accordion_head_left_block li {
+  color: #1B1B1B;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+.purchase .accordion_head_right_block {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+.purchase .accordion_body_in {
+  padding-top: 16px;
+}
+.purchase .accordion .line {
+  height: 1px;
+  width: 100%;
+  border: 1px solid #C5C5C5;
+  margin-bottom: 16px;
+}
+.purchase .accordion table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.purchase .accordion table thead td,
+.purchase .accordion table tbody td {
+  width: 120px;
+}
+.purchase .accordion table thead td:first-child,
+.purchase .accordion table tbody td:first-child {
+  width: 376px;
+}
+.purchase .accordion table thead td {
+  color: #404040;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.5;
+  padding-bottom: 17px;
+}
+.purchase .accordion table .title, .purchase .accordion table .price {
+  color: #1B1B1B;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+.purchase .accordion table .quantity {
+  color: #1B1B1B;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+.purchase .accordion table .money {
+  color: #1B1B1B;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+.purchase .accordion table .money,
+.purchase .accordion table .title,
+.purchase .accordion table .price {
+  padding-bottom: 8px;
+}
+.purchase .accordion table .amount {
+  color: #404040;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+}
+.purchase .accordion table .amount:not(.last) {
+  padding-bottom: 17px;
+}
+
 .header {
   position: fixed;
   z-index: 5;
@@ -2014,5 +2139,61 @@ address {
   }
   .contact_form .accent_btn {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .purchase {
+    margin-bottom: 100px;
+  }
+  .purchase .accordion {
+    padding: 20px;
+  }
+  .purchase .accordion_head {
+    align-items: flex-start;
+  }
+  .purchase .accordion_head_left_block {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .purchase .accordion_head_left_block li {
+    font-size: 14px;
+  }
+  .purchase .accordion table {
+    width: auto;
+  }
+  .purchase .accordion table .title, .purchase .accordion table .price, .purchase .accordion table .quantity, .purchase .accordion table .money {
+    font-size: 14px;
+  }
+  .purchase .accordion table thead td,
+  .purchase .accordion table tbody td {
+    min-width: 100px;
+  }
+  .purchase .accordion table thead td:first-child,
+  .purchase .accordion table tbody td:first-child {
+    min-width: 280px;
+  }
+  .purchase .accordion .table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .purchase .accordion_head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .purchase .accordion_head_left_block {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .purchase .accordion_head_left_block li {
+    font-size: 14px;
+  }
+  .purchase .accordion_head_right_block {
+    width: 100%;
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=style.css.map */

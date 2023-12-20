@@ -1,0 +1,73 @@
+@media only screen and (max-width: 992px) {
+    .purchase {
+        margin-bottom: 100px;
+
+        .accordion {
+            padding: 20px;
+
+            &_head {
+                align-items: flex-start;
+
+                &_left_block {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+
+                    li {
+                        font-size: 14px;
+                    }
+                }
+            }
+            
+            table {
+                width: auto;
+                .title, .price, .quantity, .money {
+                    font-size: 14px;
+                }
+
+                thead td,
+                tbody td {
+                    min-width: 100px;
+                }
+
+                thead td:first-child,
+                tbody td:first-child {
+                    min-width: 280px;
+                }
+            }
+
+            .table {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                // background: red;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .purchase {
+        .accordion {
+            &_head {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 20px;
+
+                &_left_block {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+
+                    li {
+                        font-size: 14px;
+                    }
+                }
+
+                &_right_block {
+                    width: 100%;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
