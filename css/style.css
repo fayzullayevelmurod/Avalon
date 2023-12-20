@@ -740,6 +740,33 @@ address {
   flex: 1;
 }
 
+.about_home {
+  padding-top: 101px;
+  background: linear-gradient(180deg, #FEFEFC 0%, #FEF9F5 51.89%, #F1E8E1 100%);
+}
+.about_home .under_container {
+  padding: 21px 10px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.about_home .breadcrumbs {
+  padding-top: 30px;
+}
+.about_home .home_title {
+  margin-top: 76px;
+}
+.about_home .about_home_left {
+  padding-left: 75px;
+}
+.about_home .about_home_text {
+  max-width: 641px;
+  color: #404040;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+}
+
 .catalog_part .home_title {
   margin: 49px 0 32px 0;
 }
@@ -833,6 +860,9 @@ address {
 .guarantees .main_title {
   margin: 49px 0 16px 0;
 }
+.guarantees .payment_title {
+  margin: 49px 0 32px 0;
+}
 .guarantees span {
   max-width: 870px;
   color: #404040;
@@ -868,6 +898,20 @@ address {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+.guarantees .guarantees_cards .last_text {
+  margin-top: 16px;
+}
+.guarantees .guarantees_cards .accent_link {
+  margin-top: 8px;
+  text-decoration: none;
+  border-bottom: 1px dashed #C13222;
+}
+.guarantees .guarantees_cards .payment_bank_cards {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
 }
 
 .contact_home {
@@ -1926,6 +1970,9 @@ address {
   }
   .guarantees .guarantees_cards h5 {
     margin-bottom: 10px;
+  }
+  .guarantees .guarantees_cards .payment_bank_cards {
+    margin-top: 24px;
   }
   .footer .under_container {
     padding: 0 35px;
