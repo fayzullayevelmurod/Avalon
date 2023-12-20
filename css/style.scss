@@ -149,6 +149,31 @@ button {
     line-height: 24px;
 }
 
+.breadcrumbs {
+    padding-top: 130px;
+    @include flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    a {
+        color: $--Accent;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        border-bottom: 1px dashed transparent;
+
+        &:hover {
+            border-bottom: 1px dashed $--Accent;
+        }
+    }
+
+    span {
+        color: #1B1B1B;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
 // global block
 
 
@@ -768,6 +793,78 @@ button {
 // about page
 
 // about page
+
+// catalog page
+.catalog_part {
+    .home_title {
+        margin: 49px 0 32px 0;
+    }
+
+    .catalog_part_cards {
+        @include flex-start;
+        flex-wrap: wrap;
+        gap: 24px 30px;
+    }
+
+    .catalog_part_card_one {
+        background-image: url('../images/catalog_part1.png');
+    }
+    
+    .catalog_part_card_two {
+        background-image: url('../images/category_right1.png');
+    }
+
+    .catalog_part_card_three {
+        background-image: url('../images/category_right2.png');
+    }
+
+    .catalog_part_card_four {
+        background-image: url('../images/category_right3_media.png');
+    }
+    
+    .catalog_part_card {
+        // background-size: 100% 100%;
+        background-size: cover;
+        padding: 65px 24px 56px 24px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        border-radius: 20px;
+        width: calc(100% / 2 - 15px);
+
+        h4 {
+            max-width: 200px;
+            color: $--Black;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 8px;
+        }
+
+        h4.white {
+            color: $--White;
+        }
+
+        p {
+            color: $--White;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-decoration-line: underline;
+            opacity: 0.5;
+            margin-bottom: 16px;
+        }
+
+        p.black {
+            color: $--Black;
+        }
+
+        .accent_btn {
+            height: 40px;
+            width: 140px;
+        }
+    }
+}
+// catalog page
 
 
 

@@ -109,6 +109,30 @@ button {
   line-height: 24px;
 }
 
+.breadcrumbs {
+  padding-top: 130px;
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.breadcrumbs a {
+  color: #C13222;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  border-bottom: 1px dashed transparent;
+}
+.breadcrumbs a:hover {
+  border-bottom: 1px dashed #C13222;
+}
+.breadcrumbs span {
+  color: #1B1B1B;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .home {
   padding-top: 64px;
 }
@@ -645,6 +669,63 @@ button {
   flex: 1;
 }
 
+.catalog_part .home_title {
+  margin: 49px 0 32px 0;
+}
+.catalog_part .catalog_part_cards {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 24px 30px;
+}
+.catalog_part .catalog_part_card_one {
+  background-image: url("../images/catalog_part1.png");
+}
+.catalog_part .catalog_part_card_two {
+  background-image: url("../images/category_right1.png");
+}
+.catalog_part .catalog_part_card_three {
+  background-image: url("../images/category_right2.png");
+}
+.catalog_part .catalog_part_card_four {
+  background-image: url("../images/category_right3_media.png");
+}
+.catalog_part .catalog_part_card {
+  background-size: cover;
+  padding: 65px 24px 56px 24px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border-radius: 20px;
+  width: calc(50% - 15px);
+}
+.catalog_part .catalog_part_card h4 {
+  max-width: 200px;
+  color: #1B1B1B;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.catalog_part .catalog_part_card h4.white {
+  color: #FFF;
+}
+.catalog_part .catalog_part_card p {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration-line: underline;
+  opacity: 0.5;
+  margin-bottom: 16px;
+}
+.catalog_part .catalog_part_card p.black {
+  color: #1B1B1B;
+}
+.catalog_part .catalog_part_card .accent_btn {
+  height: 40px;
+  width: 140px;
+}
+
 .header {
   position: fixed;
   z-index: 5;
@@ -1065,6 +1146,9 @@ button {
   }
 }
 @media only screen and (max-width: 992px) {
+  .breadcrumbs {
+    display: none;
+  }
   .product_category_top {
     margin: 24px 0 72px 0;
   }
@@ -1148,6 +1232,37 @@ button {
   }
   .avalon_informations .avalon_information_card img {
     margin-bottom: 0;
+  }
+  .catalog_part {
+    padding-top: 50px;
+  }
+  .catalog_part .home_title {
+    font-size: 30px;
+    margin: 40px 0 24px 0;
+  }
+  .catalog_part .catalog_part_cards {
+    gap: 16px;
+  }
+  .catalog_part .catalog_part_cards .catalog_part_card {
+    width: 100%;
+  }
+  .catalog_part .catalog_part_card {
+    padding: 35px 16px 25px 16px;
+  }
+  .catalog_part .catalog_part_card h4 {
+    font-size: 25px;
+  }
+  .catalog_part .catalog_part_card_one {
+    background-image: url("../images/catalog_part1_media.png");
+  }
+  .catalog_part .catalog_part_card_two {
+    background-image: url("../images/category_right1.png");
+  }
+  .catalog_part .catalog_part_card_three {
+    background-image: url("../images/category_right2_media.png");
+  }
+  .catalog_part .catalog_part_card_four {
+    background-image: url("../images/category_right3_media.png");
   }
   .comment .main_container {
     flex-direction: column;
