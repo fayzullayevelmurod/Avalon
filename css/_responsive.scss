@@ -1,3 +1,17 @@
+@media only screen and (max-width: 1330px) {
+    .popular_product {
+        .popular_product_slider {
+            .product_slider_prev {
+                left: 5px;
+            }
+
+            .product_slider_next {
+                right: 5px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 1210px) {
     .header {
         .header_left {
@@ -72,6 +86,8 @@
 @media only screen and (max-width: 992px) {
 
     .product_category_top {
+        margin: 24px 0 72px 0;
+
         .main_container {
             flex-direction: column;
 
@@ -82,6 +98,7 @@
     }
 
     .category_product {
+        margin-bottom: 72px;
 
         .category_title {
             font-size: 30px;
@@ -123,6 +140,66 @@
 
         .category_right_card {
             padding: 35px 16px;
+        }
+    }
+
+    .popular_product {
+
+        .popular_title {
+            font-size: 30px;
+            margin-bottom: 26px;
+        }
+        .popular_product_slider {
+            .product_slider_btn {
+                display: none;
+            }
+        }
+    }
+
+    .avalon_info {
+        .main_container {
+            flex-direction: column;
+            gap: 8px;
+
+            .avalon_info_left {
+                .avalon_desktop_img {
+                    display: none;
+                }
+
+                .avalon_media {
+                    display: block;
+                }
+            }
+
+            .avalon_info_right {
+                .home_slider_title {
+                    font-size: 35px;
+                    margin-bottom: 24px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    .avalon_informations {
+        .main_container {
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .avalon_information_card {
+            display: flex;
+            gap: 16px;
+            @include flex-start;
+
+            img {
+                margin-bottom: 0;
+            }
         }
     }
     
@@ -273,6 +350,14 @@
                 a {
                     padding-bottom: 238px;
                 }
+            }
+        }
+    }
+
+    .avalon_info {
+        .avalon_info_right {
+            .accent_btn {
+                width: 100%;
             }
         }
     }

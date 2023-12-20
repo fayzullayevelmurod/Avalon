@@ -22,7 +22,7 @@ menu_mobile.addEventListener('click', () => {
 // burger
 
 // home swipper
-let swiper = new Swiper(".homeSwiper", {
+let swiper_one = new Swiper(".homeSwiper", {
   slidesPerView: "auto",
   cssMode: true,
   navigation: {
@@ -37,6 +37,31 @@ let swiper = new Swiper(".homeSwiper", {
   keyboard: true,
 });
 // home swipper
+
+// popular_product
+let swiper_two = new Swiper(".popularSwiper", {
+  slidesPerView: 1.2,
+  spaceBetween: 20,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    }
+  },
+  navigation: {
+    nextEl: ".product_slider_next",
+    prevEl: ".product_slider_prev",
+  },
+});
+// popular_product
 
 
 // input mask
