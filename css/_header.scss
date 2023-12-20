@@ -51,6 +51,16 @@
         }
     }
 
+    .catalog_btn.active {
+        border: 1px solid transparent;
+        background-color: $--Accent;
+        color: $--White;
+
+        svg {
+            fill: $--White;
+        }
+    }
+
     .header_contact {
         @include flex-center;
         gap: 16px;
@@ -163,6 +173,33 @@
             &:hover {
                 opacity: 0.5;
             }
+
+            svg {
+                margin-left: auto;
+            }
+        }
+
+        .catalog_dropdown {
+            display: none;
+
+            .catalog_dropdown_item {
+                margin-top: 12px;
+                padding-left: 36px;
+                
+                a {
+                    color: $--Black;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+            }
+            
+        }
+    }
+
+    .catalog_dropdown_btn:hover {
+        .catalog_dropdown {
+            display: block;
         }
     }
 

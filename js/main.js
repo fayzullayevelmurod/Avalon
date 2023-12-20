@@ -14,11 +14,6 @@ menu_bg.addEventListener('click', () => {
   menu_bg.classList.remove('active');
 });
 
-menu_mobile.addEventListener('click', () => {
-  menu_mobile.classList.remove('active');
-  menu_bg.classList.remove('active');
-});
-
 // burger
 
 // home swipper
@@ -63,6 +58,13 @@ let swiper_two = new Swiper(".popularSwiper", {
 });
 // popular_product
 
+// commentSwiper
+var swiper = new Swiper(".commentSwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+// commentSwiper
 
 // input mask
 let phoneInput = document.getElementById('phone');
