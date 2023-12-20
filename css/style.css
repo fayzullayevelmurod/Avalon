@@ -827,6 +827,49 @@ address {
   margin-bottom: 16px;
 }
 
+.guarantees {
+  padding-bottom: 24px;
+}
+.guarantees .main_title {
+  margin: 49px 0 16px 0;
+}
+.guarantees span {
+  max-width: 870px;
+  color: #404040;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+.guarantees h6 {
+  color: #1B1B1B;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+.guarantees .guarantees_cards {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+}
+.guarantees .guarantees_cards .guarantees_card {
+  flex: 1;
+}
+.guarantees .guarantees_cards h5 {
+  color: #C13222;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.guarantees .guarantees_cards p {
+  color: #404040;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 .contact_home {
   margin: 56px 0;
 }
@@ -1399,6 +1442,7 @@ address {
   text-decoration-line: underline;
 }
 .menu_mobile .menu_in {
+  height: calc(100vh - 101.6px);
   padding: 16px 10px 32px 10px;
   display: flex;
   flex-direction: column;
@@ -1437,7 +1481,7 @@ address {
   display: block;
 }
 .menu_mobile .menu_in_bottom {
-  margin-top: 189px;
+  margin-top: auto;
 }
 .menu_mobile .menu_phone_btn {
   color: #3A4754;
@@ -1630,6 +1674,9 @@ address {
   .home_title {
     font-size: 30px;
     margin: 40px 0 24px 0;
+  }
+  .main_title {
+    font-size: 25px;
   }
   .product_category_top {
     margin: 24px 0 72px 0;
@@ -1865,6 +1912,20 @@ address {
   }
   .requisites {
     padding-top: 70px;
+  }
+  .requisites .requisites_card {
+    padding: 32px 24px;
+  }
+  .guarantees {
+    padding-bottom: 0;
+    margin-top: 90px;
+  }
+  .guarantees .guarantees_cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .guarantees .guarantees_cards h5 {
+    margin-bottom: 10px;
   }
   .footer .under_container {
     padding: 0 35px;

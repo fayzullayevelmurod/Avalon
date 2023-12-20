@@ -110,6 +110,10 @@
         margin: 40px 0 24px 0;
     }
 
+    .main_title {
+        font-size: 25px;
+    }
+
     .product_category_top {
         margin: 24px 0 72px 0;
 
@@ -431,6 +435,24 @@
 
     .requisites {
         padding-top: 70px;
+
+        .requisites_card {
+            padding: 32px 24px;
+        }
+    }
+
+    .guarantees {
+        padding-bottom: 0;
+        margin-top: 90px;
+
+        .guarantees_cards {
+            flex-direction: column;
+            gap: 20px;
+
+            h5 {
+                margin-bottom: 10px;
+            }
+        }
     }
     
     .footer {

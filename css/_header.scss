@@ -225,6 +225,7 @@
     }
 
     .menu_in {
+        height: calc(100vh - 101.6px);
         padding: 16px 10px 32px 10px;
         display: flex;
         flex-direction: column;
@@ -274,7 +275,7 @@
     }
 
     .menu_in_bottom {
-        margin-top: 189px;
+        margin-top: auto;
     }
 
     .menu_phone_btn {
