@@ -797,6 +797,36 @@ address {
   width: 140px;
 }
 
+.requisites {
+  padding-bottom: 24px;
+  padding-bottom: 0;
+}
+.requisites .home_title {
+  margin: 40px 0 32px 0;
+}
+.requisites .requisites_card {
+  max-width: 770px;
+  padding: 40px 32px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #FAFAFA 0%, #FAFAFA 100%), #D9D9D9;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.requisites .requisites_card span {
+  color: #404040;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 4px;
+  opacity: 0.5;
+}
+.requisites .requisites_card p {
+  color: #1B1B1B;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
 .contact_home {
   margin: 56px 0;
 }
@@ -1832,6 +1862,9 @@ address {
   }
   .main_area, .profile_area {
     margin-bottom: 100px;
+  }
+  .requisites {
+    padding-top: 70px;
   }
   .footer .under_container {
     padding: 0 35px;
