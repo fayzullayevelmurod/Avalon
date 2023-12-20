@@ -653,9 +653,62 @@ button {
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 }
 .header .under_container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header .catalog_content_bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: transparent;
+}
+.header .catalog_content_bg.active {
+  display: block;
+}
+.header .catalog_content {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 90%;
+  padding: 32px 50px;
+  position: absolute;
+  top: 68px;
+  z-index: 3;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 0px 0px 16px 16px;
+  background: #FFF;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1), 0px -4px 7px 0px rgba(0, 0, 0, 0.06);
+}
+.header .catalog_content .catalog_link {
+  flex: 1;
+}
+.header .catalog_content .catalog_link img {
+  width: 100%;
+}
+.header .catalog_content .catalog_link h4 {
+  margin: 16px 0 4px 0;
+  color: #1B1B1B;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+}
+.header .catalog_content .catalog_link p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration-line: underline;
+  opacity: 0.5;
+}
+.header .catalog_content.active {
+  display: flex;
 }
 .header .burger_open {
   display: none;
@@ -677,6 +730,9 @@ button {
   font-weight: 500;
   line-height: normal;
 }
+.header .catalog_btn svg path {
+  fill: #000;
+}
 .header .nav .nav_link {
   display: flex;
   align-items: center;
@@ -694,7 +750,7 @@ button {
   background-color: #C13222;
   color: #FFF;
 }
-.header .catalog_btn.active svg {
+.header .catalog_btn.active svg path {
   fill: #FFF;
 }
 .header .header_contact {
@@ -954,6 +1010,9 @@ button {
     align-items: center;
     gap: 13px;
   }
+  .header .catalog_content {
+    display: none !important;
+  }
   .header .logo img {
     width: 106px;
   }
@@ -1210,6 +1269,8 @@ button {
     display: block;
   }
   .comment .comment_left {
+    margin-bottom: 72px;
+    padding: 0;
     width: 100%;
     border-radius: 20px;
     background: transparent;

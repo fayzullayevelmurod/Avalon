@@ -19,6 +19,10 @@
             gap: 13px;
         }
 
+        .catalog_content {
+            display: none !important;
+        }
+
         .logo {
             img {
                 width: 106px;
@@ -388,6 +392,8 @@
         }
 
         .comment_left {
+            margin-bottom: 72px;
+            padding: 0;
             width: 100%;
             border-radius: 20px;
             background: transparent;
