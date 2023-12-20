@@ -178,6 +178,6 @@ try {
   });
   // input mask
 
-} catch {
+} catch (err) {
   console.log(err);
 }
