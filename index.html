@@ -20,6 +20,44 @@
 
     <div class="wrapper">
 
+        <!-- modal header -->
+        <div class="modal_contact_bg"></div>
+        <div class="modal_contact">
+            <div class="modal_contact_wrapper">
+                <button class="modal_contact_btn">
+                    <img src="./images/icons/modal_contact_close.svg" alt="">
+                </button>
+                <div class="modal_contact_left_content">
+                    <span>
+                        Хотите узнать больше о продукции?
+                    </span>
+                    <h2>
+                        Закажите звонок
+                    </h2>
+                    <p>
+                        Наши специалисты перезвонят и ответят на все Ваши вопросы
+                    </p>
+                    <form class="modal_contact_form" action="#" method="#">
+                        <label for="name">
+                            Ваше имя
+                        </label>
+                        <input class="input_light" id="name" type="text" placeholder="Иван Иванов">
+                        <label for="tel">
+                            Ваш телефон или почта
+                        </label>
+                        <input class="input_light" id="tel" type="text" placeholder="+7 (999) 999-99-99">
+                        <button type="submit" class="accent_btn">
+                            Заказать звонок
+                        </button>
+                    </form>
+                </div>
+                <div class="modal_contact_img">
+                    <img src="./images/modal_contact_img.png" alt="">
+                </div>
+            </div>
+        </div>  
+        <!-- modal header -->
+
         <!-- header -->
         <header class="header">
             <div class="catalog_content_bg"></div>
@@ -115,9 +153,9 @@
                         <a href="tel:+7903260176">
                             +7 (903) 226-01-76
                         </a>
-                        <span>
+                        <button class="contact_modal_open">
                             Заказать звонок
-                        </span>
+                        </button>
                     </div>
                     <a href="#" class="shop_icon">
                         <img src="./images/icons/shop_icon.svg" alt="">
@@ -330,28 +368,28 @@
         <!-- product_category top -->
         <section class="product_category_top">
             <div class="main_container">
-                <div class="product_category_top_card top_card_one">
+                <a href="#" class="product_category_top_card top_card_one">
                     <h5>
                         Эксклюзивное право  
                     </h5>
                     <p>
                         Возможность производить продукцию по вашему желанию, макету, изображению.
                     </p>
-                    <a href="#">
+                    <button>
                         Подробнее →
-                    </a>
-                </div>
-                <div class="product_category_top_card top_card_two">
+                    </button>
+                </a>
+                <a href="#" class="product_category_top_card top_card_two">
                     <h5>
                         Дилерам 
                     </h5>
                     <p>
                         Возможность производить продукцию по вашему желанию, макету, изображению.
                     </p>
-                    <a href="#">
+                    <button>
                         Подробнее →
-                    </a>
-                </div>
+                    </button>
+                </a>
             </div>
         </section>
         <!-- product_category top -->
@@ -363,51 +401,51 @@
                     Категории товаров
                 </h3>
                 <div class="category_product_in">
-                    <div class="category_left_card">
+                    <a href="#" class="category_left_card">
                         <h3>
                             Модульные картины
                         </h3>
                         <p>
                             Товаров: 124
                         </p>
-                        <a href="#" class="accent_btn">
+                        <button class="accent_btn">
                             Подробнее
-                        </a>
-                    </div>
+                        </button>
+                    </a>
                     <div class="category_right_cards">
-                        <div class="category_right_card right_card_one">
+                        <a href="#" class="category_right_card right_card_one">
                             <h3>
                                 Картины (постеры)
                             </h3>
                             <p>
                                 Товаров: 62
                             </p>
-                            <a href="#" class="accent_btn">
+                            <button class="accent_btn">
                                 Подробнее
-                            </a>
-                        </div>
-                        <div class="category_right_card right_card_two">
+                            </button>
+                        </a>
+                        <a href="#" class="category_right_card right_card_two">
                             <h3>
                                 Часы настенные  
                             </h3>
                             <p>
                                 Товаров: 17
                             </p>
-                            <a href="#" class="accent_btn">
+                            <button class="accent_btn">
                                 Подробнее
-                            </a>
-                        </div>
-                        <div class="category_right_card category_right_card_end">
+                            </button>
+                        </a>
+                        <a href="#" class="category_right_card category_right_card_end">
                             <h3>
                                 Декоративные панно
                             </h3>
                             <p>
                                 Товаров: 10
                             </p>
-                            <a href="#" class="accent_btn">
+                            <button class="accent_btn">
                                 Подробнее
-                            </a>
-                        </div>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>

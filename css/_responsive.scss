@@ -10,6 +10,17 @@
             }
         }
     }
+
+    .about_avalon_office {
+        .avalon_office_slider {
+            .avalon_office_prev {
+                left: 0;
+            }
+            .avalon_office_next {
+                right: 0;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1210px) {
@@ -93,13 +104,48 @@
 }
 
 @media only screen and (min-width: 1210px) {
-    .menu_bg ,
+    .menu_bg.active ,
     .menu_mobile {
         display: none;
     }
 }
 
 @media only screen and (max-width: 992px) {
+
+    .modal_contact {
+        width: 400px;
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .modal_contact_btn {
+            top: 10px;
+            right: 10px;
+        }
+
+        span {
+            font-size: 15px;
+        }
+
+        .accent_btn {
+            width: 100%;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .modal_contact_left_content {
+            padding: 30px;
+        }
+
+        .modal_contact_img {
+            display: none;
+        }
+    }
 
     .breadcrumbs {
         display: none;
@@ -458,6 +504,162 @@
             }
         }
     }
+
+    .about_home {
+        .under_container {
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .about_home_left {
+            padding-left: 0;
+        }
+
+        .about_home_right {
+            width: 100%;
+            @include flex-full-center;
+        }
+
+        .home_title {
+            margin: 10px 0 15px 0;
+        }
+        .about_home_text {
+            font-size: 16px;
+        }
+    }
+
+    .avalon_office {
+        margin: 50px 0;
+        .main_container {
+            flex-direction: column-reverse;
+            gap: 25px;
+        }
+
+        .avalon_office_left {
+            span {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .about_avalon_office {
+        .avalon_office_slider {
+            .avalon_office_btn {
+                display: none;
+            }
+        }
+    }
+
+    .avalon_office_two {
+        .main_container {
+            flex-direction: column;
+        }
+    }
+
+    .copyright_home {
+        p {
+            font-size: 15px;
+            padding-bottom: 40px;
+        }
+    }
+
+    .copyright_about {
+        margin: 40px 0;
+
+        .main_title {
+            margin-bottom: 20px;
+        }
+
+        .about_contact_img {
+            display: block;
+        }
+
+        .copyright_about_in {
+            flex-direction: column;
+            align-items: start;
+            gap: 30px;
+        }
+
+        .copyright_about_left {
+            max-width: 100%;
+        }
+
+        .copyright_about_right {
+            width: 100%;
+            @include flex-full-center;
+        }
+    }
+
+    .about_contact {
+        .under_container {
+            background-position: left;
+
+            h3 {
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+
+            .about_contact_text {
+                padding: 30px 0;
+            }
+
+            .about_contact_form {
+                flex-direction: column;
+                align-items: start;
+
+                .form_block {
+                    width: 100%;
+                }
+
+                input ,
+                button {
+                    width: 100%;
+                }
+            }
+
+            .form_block {
+                flex-basis: auto;
+            }
+        }
+    }
+
+    .dealers_cards {
+
+        .dealers_card ,
+        .dealers_card_two {
+            .dealers_card_left {
+                h3, ul {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
+                h3 {
+                    margin-bottom: 20px;
+                }
+
+                li {
+                    font-size: 14px;
+                }
+            }
+        }
+        
+        .main_container {            
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .dealers_card {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
     
     .footer {
         .under_container {
@@ -629,7 +831,7 @@
                     margin-bottom: 16px;
                 }
 
-                a {
+                button {
                     padding-bottom: 238px;
                 }
             }
@@ -684,8 +886,9 @@
         }
 
         .comment_right {
+            display: block;
             width: 100%;
-            height: 410px;
+            height: auto;
             padding: 40px 16px;
 
             ul {
@@ -693,14 +896,20 @@
             }
 
             .comment_from  {
+                height: auto;
                 flex-direction: column;
                 gap: 16px;
 
                 .input_light, 
                 .accent_btn {
+                    height: 44px;
                     padding: 13px 13px;
                     border-radius: 5px;
                     width: 100%;
+                }
+
+                .accent_btn {
+                    padding: 10px 13px;
                 }
 
             }
@@ -718,6 +927,14 @@
 
         .accent_btn {
             width: 100%;
+        }
+    }
+
+    .modal_contact {
+        width: 90%;
+        
+        .modal_contact_left_content {
+            padding: 20px 30px 20px 20px;
         }
     }
 }

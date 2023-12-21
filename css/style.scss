@@ -128,6 +128,27 @@ address {
     background-color: $--Accent;
     @include flex-full-center;
     border-radius: 10px;
+    @include transition;
+
+    &:hover {
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.popular_category_btn {
+    @include transition;
+
+    &:hover {
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.light_btn {
+    @include transition;
+
+    &:hover {
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+    }
 }
 
 .input_light {
@@ -431,7 +452,7 @@ address {
             margin-bottom: 28px;
         }
 
-        a {
+        button {
             color: $--Accent;
             font-size: 16px;
             font-weight: 600;
@@ -1208,6 +1229,335 @@ address {
 }
 // Contact form end
 
+// avalon_office page
+.avalon_office {
+    margin: 81px 0 71px 0;
+    .main_container {
+        @include flex-center;
+        gap: 50px;
+    }
+
+    .avalon_office_left {
+        flex: 1;
+
+        .main_title {
+            margin-bottom: 16px;
+        }
+
+        span {
+            color: $--Text;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+            margin-bottom: 24px;
+        }
+
+        p {
+            color: $--Text;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+
+    .avalon_office_right {
+        flex: 1;
+    }
+}
+// avalon_office page
+
+// about_avalon_office
+.about_avalon_office {
+
+    .main_title {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .avalon_office_slider {
+        @include flex-full-center;
+        position: relative;
+        
+        .avalon_office_prev {
+            left: -68px;
+        }
+        .avalon_office_next {
+            right: -68px;
+        }
+
+        .avalon_office_btn {
+            top:30%;
+            cursor: pointer;
+            @include flex-full-center;
+            position: absolute;
+            z-index: 2;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background-color: $--Accent;
+        }
+
+        .aboutSwiper {
+            @include flex-full-center;
+        }
+
+        .about_card {
+            img {
+                width: 100%;
+            }
+
+            h5 {
+                margin: 24px 0 16px 0;
+                color: $--Black;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            p {
+                color: $--Text;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+    }
+}
+// about_avalon_office
+
+// about_accardion
+.about_accardion {
+    .accardion_block {
+        max-width: 970px;
+        margin: 0 auto;
+    }
+
+    .main_title {
+        margin-bottom: 31px;
+    }
+
+    .accardion_btn {
+        position: relative;
+        width: 100%;
+        @include flex-center;
+        justify-content: space-between;
+        color: $--Black;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        padding-bottom: 19px;
+        border-bottom: 1px solid $--Black;
+
+        .accardion_icon {
+            @include flex-full-center;
+            .accardion_close {
+                opacity: 0;
+                display: none;
+                @include transition;
+            }
+
+            .accardion_open {
+                // opacity: 0;
+                // display: none;
+                @include transition;
+            }
+
+        }
+    }
+
+    .accordion-item-body-content {
+        color: $--Text;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 16px 0 27px 0;
+    }
+}
+// about_accardion
+
+// copyright_home
+.copyright_home {
+    background: linear-gradient(180deg, #FEFEFC 0%, #FEF9F5 51.89%, #F1E8E1 100%), #D9D9D9;
+
+    .breadcrumbs {
+        padding-top: 100px;
+    }
+
+    .home_title {
+        margin-top: 92px;
+        margin-bottom: 16px;
+    }
+
+    p {
+        max-width: 970px;
+        color: $--Text;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        padding-bottom: 100px;
+    }
+}
+// copyright_home
+
+// copyright_about
+.copyright_about {
+    margin: 58px 0 76px 0;
+
+    .copyright_about_in {
+        @include flex-center;
+        gap: 38px;
+    }
+
+    .main_title {
+        margin-bottom: 31px;
+    }
+
+    .copyright_about_left {
+        max-width: 570px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+
+        li {
+            @include flex-start;
+            color: $--Text;
+            gap: 8px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .copyright_icon {
+            flex-shrink: 0;
+        }
+    }
+}
+// copyright_about
+
+// about_contact
+.about_contact {
+    margin: 0 10px;
+    .under_container {
+        background-image: url('../images/about_contact_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        border-radius: 20px;
+        overflow: hidden;
+
+        .about_contact_img {
+            display: none;
+        }
+
+        .about_contact_text {
+            padding: 81px 0 57px 0;
+        }
+
+        h3 {
+            color: $--Black;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: $--Text;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            margin-bottom: 41px;
+        }
+
+        .about_contact_form {
+            display: flex;
+            align-items: end;
+            gap: 16px;
+        }
+
+        .form_block {
+            flex-basis: 262px;
+            display: flex;
+            flex-direction: column;
+
+            label {
+                color: $--Text;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 24px;
+                margin-bottom: 8px;
+            }
+
+            button {
+                width: 160px;
+            }
+        }
+    }
+}
+// about_contact
+
+// dealers_cards
+.dealers_cards {
+    margin: 56px 0;
+    .dealers_card {
+        justify-content: space-between;
+        @include flex-center;
+        
+        h3 {
+            margin-bottom: 32px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            li {
+                @include flex-start;
+                gap: 8px;
+                color: $--Text;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+
+                .dealers_icon {
+                    flex-shrink: 0;
+                }
+            }
+        }
+
+        .dealers_card_left ,
+        .dealers_card_right {
+            flex: 1;
+        }
+
+        .dealers_card_left {
+            h3 ,
+            ul {
+                padding-right: 40px;
+            }
+        }
+    }
+
+    .dealers_card_two {
+        transform: translateY(-3px);
+        flex-direction: row-reverse;
+
+        .dealers_card_left {
+            h3 ,
+            ul {
+                padding-left: 40px;
+            }
+        }
+
+        .dealers_card_right {
+            
+            img {
+                flex-basis: 585px;
+            }
+        }
+    }
+}
+// dealers_cards
 
 // Auth 
 .auth {
