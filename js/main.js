@@ -15,6 +15,124 @@
 //   e.preventDefault();
 // });
 // // input mask
+let card_product_modal = document.querySelector('.card_product_home .checkbox_wrapper');
+if (card_product_modal) {
+  let card_product_bn = document.querySelector('.card_product_home .checkbox_show')
+  let modal_close_btn = document.querySelector('.card_product_home .checkbox_wrapper .light_btn')
+  let modal_bg = document.querySelector('.card_product_home .checkbox_wrapper .bg')
+  card_product_bn.onclick = () => {
+    card_product_modal.classList.add('active')
+    card_product_bn.classList.add('active')
+  }
+  modal_close_btn.onclick = () => {
+    card_product_modal.classList.remove('active')
+    card_product_bn.classList.remove('active')
+  }
+  modal_bg.onclick = () => {
+    card_product_modal.classList.remove('active')
+    card_product_bn.classList.remove('active')
+  }
+}
+
+let card_product_slide = document.querySelector('.card_product_home .main_slider');
+if (card_product_slide) {
+  let project_main_slider = new Swiper(".card_product_home .mini_slider", {
+    spaceBetween: 14,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+  let project_mini_slider = new Swiper(".card_product_home .main_slider", {
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".card_product_home .slide_next_btn",
+      prevEl: ".card_product_home .slide_prev_btn",
+    },
+    thumbs: {
+      swiper: project_main_slider,
+    },
+  });
+}
+
+let category_sort_btns = document.querySelectorAll('.categories_cards .accordion .sort_btn');
+if (category_sort_btns.length) {
+  category_sort_btns.forEach(btn => {
+    btn.onclick = () => {
+      btn.classList.toggle('active')
+    }
+  })
+}
+
+let dropdowns = document.querySelectorAll('.dropdown');
+if (dropdowns.length) {
+  dropdowns.forEach(dropdown => {
+    let dropdown_head = dropdown.querySelector('.dropdown_head');
+    let dropdown_items = dropdown.querySelectorAll('.dropdown_body button');
+    let head_text = dropdown.querySelector('.dropdown_head span');
+    dropdown_head.onclick = () => {
+      dropdown.classList.toggle('active')
+    }
+    dropdown_items.forEach(btn => {
+      btn.onclick = () => {
+        dropdown.classList.remove('active');
+        dropdown_items.forEach(btn2 => {
+          btn2.classList.remove('active');
+        })
+        btn.classList.add("active");
+        head_text.textContent = btn.textContent;
+      }
+    })
+  })
+}
+
+let radio_groups = document.querySelectorAll('.radio_group');
+if (radio_groups.length) {
+  radio_groups.forEach(radio_group => {
+    let radios = radio_group.querySelectorAll('.radio');
+    if (radios.length) {
+      radios.forEach(radio => {
+        handleRadio(radio_group)
+        let radio_input = radio.querySelector('input[type="radio"]');
+        radio.onclick = () => {
+          radio_input.click();
+          handleRadio(radio_group);
+        }
+      })
+    }
+  })
+}
+
+function handleRadio(el) {
+  let radios = el.querySelectorAll('.radio');
+  radios.forEach(radio => {
+    let radio_input = radio.querySelector('input[type="radio"]');
+    if (radio_input.checked) {
+      radio.classList.add('active')
+    } else {
+      radio.classList.remove('active')
+    }
+  })
+}
+
+let calculates = document.querySelectorAll('.calculate');
+if (calculates.length) {
+  calculates.forEach(calculate => {
+    let minus = calculate.querySelector('.minus');
+    let plus = calculate.querySelector('.plus');
+    let value = calculate.querySelector('.calculate_value');
+
+    minus.onclick = () => {
+      if (Number(value.textContent) != 0) {
+        value.textContent = Number(value.textContent) - 1;
+      }
+    }
+
+    plus.onclick = () => {
+      value.textContent = Number(value.textContent) + 1;
+    }
+  })
+}
 
 const items = document.querySelectorAll('.accordion');
 
