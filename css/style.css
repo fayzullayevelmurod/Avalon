@@ -88,6 +88,24 @@ address {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  transition: 0.2s ease;
+}
+.accent_btn:hover {
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+.popular_category_btn {
+  transition: 0.2s ease;
+}
+.popular_category_btn:hover {
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+.light_btn {
+  transition: 0.2s ease;
+}
+.light_btn:hover {
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 }
 
 .input_light {
@@ -202,6 +220,63 @@ address {
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
+}
+
+.reviews_contact_form {
+  padding: 37px 24px 53px 24px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #FEFEFC 0%, #FEF9F5 51.89%, #F1E8E1 100%);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.reviews_contact_form h5 {
+  color: #1B1B1B;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.reviews_contact_form .main_title {
+  margin-bottom: 8px;
+}
+.reviews_contact_form p {
+  color: #404040;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+.reviews_contact_form label {
+  display: block;
+  color: #404040;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.reviews_contact_form .star {
+  margin-bottom: 12px;
+}
+.reviews_contact_form .input_light {
+  width: 100%;
+}
+.reviews_contact_form textarea {
+  width: 100%;
+  color: #1B1B1B;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  height: 160px;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid var(--Border, #C5C5C5);
+}
+.reviews_contact_form textarea:focus {
+  outline: none;
+}
+.reviews_contact_form button {
+  width: 100%;
 }
 
 .home {
@@ -366,7 +441,7 @@ address {
   line-height: 22px;
   margin-bottom: 28px;
 }
-.product_category_top .main_container a {
+.product_category_top .main_container button {
   color: #C13222;
   font-size: 16px;
   font-weight: 600;
@@ -740,6 +815,33 @@ address {
   flex: 1;
 }
 
+.about_home {
+  padding-top: 101px;
+  background: linear-gradient(180deg, #FEFEFC 0%, #FEF9F5 51.89%, #F1E8E1 100%);
+}
+.about_home .under_container {
+  padding: 21px 10px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.about_home .breadcrumbs {
+  padding-top: 30px;
+}
+.about_home .home_title {
+  margin-top: 76px;
+}
+.about_home .about_home_left {
+  padding-left: 75px;
+}
+.about_home .about_home_text {
+  max-width: 641px;
+  color: #404040;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+}
+
 .catalog_part .home_title {
   margin: 49px 0 32px 0;
 }
@@ -795,6 +897,96 @@ address {
 .catalog_part .catalog_part_card .accent_btn {
   height: 40px;
   width: 140px;
+}
+
+.requisites {
+  padding-bottom: 24px;
+  padding-bottom: 0;
+}
+.requisites .home_title {
+  margin: 40px 0 32px 0;
+}
+.requisites .requisites_card {
+  max-width: 770px;
+  padding: 40px 32px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #FAFAFA 0%, #FAFAFA 100%), #D9D9D9;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.requisites .requisites_card span {
+  color: #404040;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 4px;
+  opacity: 0.5;
+}
+.requisites .requisites_card p {
+  color: #1B1B1B;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.guarantees {
+  padding-bottom: 24px;
+}
+.guarantees .main_title {
+  margin: 49px 0 16px 0;
+}
+.guarantees .payment_title {
+  margin: 49px 0 32px 0;
+}
+.guarantees span {
+  max-width: 870px;
+  color: #404040;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+.guarantees h6 {
+  color: #1B1B1B;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+.guarantees .guarantees_cards {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+}
+.guarantees .guarantees_cards .guarantees_card {
+  flex: 1;
+}
+.guarantees .guarantees_cards h5 {
+  color: #C13222;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.guarantees .guarantees_cards p {
+  color: #404040;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.guarantees .guarantees_cards .last_text {
+  margin-top: 16px;
+}
+.guarantees .guarantees_cards .accent_link {
+  margin-top: 8px;
+  text-decoration: none;
+  border-bottom: 1px dashed #C13222;
+}
+.guarantees .guarantees_cards .payment_bank_cards {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
 }
 
 .contact_home {
@@ -904,6 +1096,325 @@ address {
   font-weight: 700;
   line-height: normal;
   margin-bottom: 16px;
+}
+
+.avalon_office {
+  margin: 81px 0 71px 0;
+}
+.avalon_office .main_container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.avalon_office .avalon_office_left {
+  flex: 1;
+}
+.avalon_office .avalon_office_left .main_title {
+  margin-bottom: 16px;
+}
+.avalon_office .avalon_office_left span {
+  color: #404040;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.avalon_office .avalon_office_left p {
+  color: #404040;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.avalon_office .avalon_office_right {
+  flex: 1;
+}
+
+.about_avalon_office .main_title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.about_avalon_office .avalon_office_slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.about_avalon_office .avalon_office_slider .avalon_office_prev {
+  left: -68px;
+}
+.about_avalon_office .avalon_office_slider .avalon_office_next {
+  right: -68px;
+}
+.about_avalon_office .avalon_office_slider .avalon_office_btn {
+  top: 30%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #C13222;
+}
+.about_avalon_office .avalon_office_slider .aboutSwiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about_avalon_office .avalon_office_slider .about_card img {
+  width: 100%;
+}
+.about_avalon_office .avalon_office_slider .about_card h5 {
+  margin: 24px 0 16px 0;
+  color: #1B1B1B;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+.about_avalon_office .avalon_office_slider .about_card p {
+  color: #404040;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about_accardion .accardion_block {
+  max-width: 970px;
+  margin: 0 auto;
+}
+.about_accardion .main_title {
+  margin-bottom: 31px;
+}
+.about_accardion .accardion_btn {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #1B1B1B;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #1B1B1B;
+}
+.about_accardion .accardion_btn .accardion_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about_accardion .accardion_btn .accardion_icon .accardion_close {
+  opacity: 0;
+  display: none;
+  transition: 0.2s ease;
+}
+.about_accardion .accardion_btn .accardion_icon .accardion_open {
+  transition: 0.2s ease;
+}
+.about_accardion .accordion-item-body-content {
+  color: #404040;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 16px 0 27px 0;
+}
+
+.copyright_home {
+  background: linear-gradient(180deg, #FEFEFC 0%, #FEF9F5 51.89%, #F1E8E1 100%), #D9D9D9;
+}
+.copyright_home .breadcrumbs {
+  padding-top: 100px;
+}
+.copyright_home .home_title {
+  margin-top: 92px;
+  margin-bottom: 16px;
+}
+.copyright_home p {
+  max-width: 970px;
+  color: #404040;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  padding-bottom: 100px;
+}
+
+.copyright_about {
+  margin: 58px 0 76px 0;
+}
+.copyright_about .copyright_about_in {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+.copyright_about .main_title {
+  margin-bottom: 31px;
+}
+.copyright_about .copyright_about_left {
+  max-width: 570px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.copyright_about .copyright_about_left li {
+  display: flex;
+  align-items: start;
+  color: #404040;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.copyright_about .copyright_about_left .copyright_icon {
+  flex-shrink: 0;
+}
+
+.about_contact {
+  margin: 0 10px;
+}
+.about_contact .under_container {
+  background-image: url("../images/about_contact_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.about_contact .under_container .about_contact_img {
+  display: none;
+}
+.about_contact .under_container .about_contact_text {
+  padding: 81px 0 57px 0;
+}
+.about_contact .under_container h3 {
+  color: #1B1B1B;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.about_contact .under_container p {
+  color: #404040;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 41px;
+}
+.about_contact .under_container .about_contact_form {
+  display: flex;
+  align-items: end;
+  gap: 16px;
+}
+.about_contact .under_container .form_block {
+  flex-basis: 262px;
+  display: flex;
+  flex-direction: column;
+}
+.about_contact .under_container .form_block label {
+  color: #404040;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.about_contact .under_container .form_block button {
+  width: 160px;
+}
+
+.dealers_cards {
+  margin: 56px 0;
+}
+.dealers_cards .dealers_card {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.dealers_cards .dealers_card h3 {
+  margin-bottom: 32px;
+}
+.dealers_cards .dealers_card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.dealers_cards .dealers_card ul li {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  color: #404040;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.dealers_cards .dealers_card ul li .dealers_icon {
+  flex-shrink: 0;
+}
+.dealers_cards .dealers_card .dealers_card_left,
+.dealers_cards .dealers_card .dealers_card_right {
+  flex: 1;
+}
+.dealers_cards .dealers_card .dealers_card_left h3,
+.dealers_cards .dealers_card .dealers_card_left ul {
+  padding-right: 40px;
+}
+.dealers_cards .dealers_card_two {
+  transform: translateY(-3px);
+  flex-direction: row-reverse;
+}
+.dealers_cards .dealers_card_two .dealers_card_left h3,
+.dealers_cards .dealers_card_two .dealers_card_left ul {
+  padding-left: 40px;
+}
+.dealers_cards .dealers_card_two .dealers_card_right img {
+  flex-basis: 585px;
+}
+
+.section_reviews .home_title {
+  margin: 58px 0 32px 0;
+}
+.section_reviews .reviews_wrapper {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+.section_reviews .reviews_left {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 30px;
+}
+.section_reviews .reviews_left .reviews_card {
+  width: calc(50% - 15px);
+}
+.section_reviews .reviews_right {
+  flex: 1;
+}
+.section_reviews .reviews_card h4 {
+  color: #1B1B1B;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.section_reviews .reviews_card .card_star {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.section_reviews .reviews_card .card_star span {
+  color: rgba(84, 96, 122, 0.68);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+.section_reviews .reviews_card p {
+  color: #404040;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .auth {
@@ -1258,6 +1769,10 @@ address {
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
+  transition: 0.2s ease;
+}
+.header .catalog_btn:hover {
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 }
 .header .catalog_btn svg path {
   fill: #000;
@@ -1298,8 +1813,10 @@ address {
   font-weight: 700;
   line-height: normal;
 }
-.header .header_phone span {
-  width: 104px;
+.header .header_phone .contact_modal_open {
+  margin-top: 4px;
+  padding-bottom: 2px;
+  width: auto;
   margin-left: auto;
   color: #C13222;
   font-size: 12px;
@@ -1320,6 +1837,12 @@ address {
   border: 1px solid #F8F8F8;
   background-color: #f6f6f6;
   filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1));
+  transition: 0.2s ease;
+}
+.header .shop_icon:hover,
+.header .user_icon:hover,
+.header .phone_icon:hover {
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 }
 .header .phone_icon {
   display: none;
@@ -1369,6 +1892,7 @@ address {
   text-decoration-line: underline;
 }
 .menu_mobile .menu_in {
+  height: calc(100vh - 101.6px);
   padding: 16px 10px 32px 10px;
   display: flex;
   flex-direction: column;
@@ -1407,7 +1931,7 @@ address {
   display: block;
 }
 .menu_mobile .menu_in_bottom {
-  margin-top: 189px;
+  margin-top: auto;
 }
 .menu_mobile .menu_phone_btn {
   color: #3A4754;
@@ -1425,6 +1949,114 @@ address {
 
 .menu_mobile.active {
   left: 0;
+}
+
+.modal_contact_bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(12.5px);
+          backdrop-filter: blur(12.5px);
+}
+
+.modal_contact_bg.active {
+  display: block;
+}
+
+.modal_contact {
+  display: none;
+  width: 970px;
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  z-index: 7;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px 10px 0 10px;
+  background: var(--Grey, linear-gradient(180deg, #FAFAFA 0%, #FAFAFA 100%));
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.25);
+}
+.modal_contact span {
+  color: #404040;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 4px;
+}
+.modal_contact h2 {
+  color: #C13222;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.modal_contact p {
+  color: #404040;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 32px;
+}
+
+.modal_contact.active {
+  display: block;
+}
+
+.modal_contact_left_content {
+  max-width: 455px;
+  padding: 43px 0 43px 40px;
+}
+
+.modal_contact_wrapper {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 50px;
+  position: relative;
+}
+.modal_contact_wrapper .modal_contact_btn {
+  position: absolute;
+  right: 19px;
+  top: 19px;
+  background-color: #C13222;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_contact_form {
+  display: flex;
+  flex-direction: column;
+}
+.modal_contact_form label {
+  color: #404040;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.modal_contact_form input {
+  margin-bottom: 10px;
+}
+.modal_contact_form .accent_btn {
+  margin-top: 14px;
+  width: 200px;
+  height: 40px;
+}
+
+.modal_contact_img img {
+  display: block;
+  height: 428px;
+  width: 445px;
+  transform: translateY(10px);
+  margin-top: 10px;
+  max-width: 445px;
 }
 
 .footer {
@@ -1532,6 +2164,12 @@ address {
   .popular_product .popular_product_slider .product_slider_next {
     right: 5px;
   }
+  .about_avalon_office .avalon_office_slider .avalon_office_prev {
+    left: 0;
+  }
+  .about_avalon_office .avalon_office_slider .avalon_office_next {
+    right: 0;
+  }
 }
 @media only screen and (max-width: 1210px) {
   .header .header_left {
@@ -1588,18 +2226,51 @@ address {
   }
 }
 @media only screen and (min-width: 1210px) {
-  .menu_bg,
+  .menu_bg.active,
   .menu_mobile {
     display: none;
   }
 }
 @media only screen and (max-width: 992px) {
+  .reviews_contact_form {
+    width: 370px;
+  }
+  .modal_contact {
+    width: 400px;
+  }
+  .modal_contact h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .modal_contact .modal_contact_btn {
+    top: 10px;
+    right: 10px;
+  }
+  .modal_contact span {
+    font-size: 15px;
+  }
+  .modal_contact .accent_btn {
+    width: 100%;
+  }
+  .modal_contact p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .modal_contact .modal_contact_left_content {
+    padding: 30px;
+  }
+  .modal_contact .modal_contact_img {
+    display: none;
+  }
   .breadcrumbs {
     display: none;
   }
   .home_title {
     font-size: 30px;
     margin: 40px 0 24px 0;
+  }
+  .main_title {
+    font-size: 25px;
   }
   .product_category_top {
     margin: 24px 0 72px 0;
@@ -1833,6 +2504,152 @@ address {
   .main_area, .profile_area {
     margin-bottom: 100px;
   }
+  .requisites {
+    padding-top: 70px;
+  }
+  .requisites .requisites_card {
+    padding: 32px 24px;
+  }
+  .guarantees {
+    padding-bottom: 0;
+    margin-top: 90px;
+  }
+  .guarantees .guarantees_cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .guarantees .guarantees_cards h5 {
+    margin-bottom: 10px;
+  }
+  .guarantees .guarantees_cards .payment_bank_cards {
+    margin-top: 24px;
+  }
+  .about_home .under_container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .about_home .about_home_left {
+    padding-left: 0;
+  }
+  .about_home .about_home_right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about_home .home_title {
+    margin: 10px 0 15px 0;
+  }
+  .about_home .about_home_text {
+    font-size: 16px;
+  }
+  .avalon_office {
+    margin: 50px 0;
+  }
+  .avalon_office .main_container {
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+  .avalon_office .avalon_office_left span {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .about_avalon_office .avalon_office_slider .avalon_office_btn {
+    display: none;
+  }
+  .avalon_office_two .main_container {
+    flex-direction: column;
+  }
+  .copyright_home p {
+    font-size: 15px;
+    padding-bottom: 40px;
+  }
+  .copyright_about {
+    margin: 40px 0;
+  }
+  .copyright_about .main_title {
+    margin-bottom: 20px;
+  }
+  .copyright_about .about_contact_img {
+    display: block;
+  }
+  .copyright_about .copyright_about_in {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+  .copyright_about .copyright_about_left {
+    max-width: 100%;
+  }
+  .copyright_about .copyright_about_right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about_contact .under_container {
+    background-position: left;
+  }
+  .about_contact .under_container h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .about_contact .under_container p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .about_contact .under_container .about_contact_text {
+    padding: 30px 0;
+  }
+  .about_contact .under_container .about_contact_form {
+    flex-direction: column;
+    align-items: start;
+  }
+  .about_contact .under_container .about_contact_form .form_block {
+    width: 100%;
+  }
+  .about_contact .under_container .about_contact_form input,
+  .about_contact .under_container .about_contact_form button {
+    width: 100%;
+  }
+  .about_contact .under_container .form_block {
+    flex-basis: auto;
+  }
+  .dealers_cards .dealers_card .dealers_card_left h3, .dealers_cards .dealers_card .dealers_card_left ul,
+  .dealers_cards .dealers_card_two .dealers_card_left h3,
+  .dealers_cards .dealers_card_two .dealers_card_left ul {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .dealers_cards .dealers_card .dealers_card_left h3,
+  .dealers_cards .dealers_card_two .dealers_card_left h3 {
+    margin-bottom: 20px;
+  }
+  .dealers_cards .dealers_card .dealers_card_left li,
+  .dealers_cards .dealers_card_two .dealers_card_left li {
+    font-size: 14px;
+  }
+  .dealers_cards .main_container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .dealers_cards .dealers_card {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section_reviews .home_title {
+    margin-top: 100px;
+  }
+  .section_reviews .reviews_left {
+    flex: auto;
+  }
+  .section_reviews .reviews_left .reviews_card {
+    width: 100%;
+  }
+  .section_reviews .reviews_right {
+    flex: auto;
+  }
   .footer .under_container {
     padding: 0 35px;
   }
@@ -1890,6 +2707,23 @@ address {
   }
 }
 @media only screen and (max-width: 768px) {
+  .reviews_contact_form {
+    width: 100%;
+    padding: 40px 15px;
+  }
+  .reviews_contact_form h5 {
+    font-size: 14px;
+  }
+  .reviews_contact_form .main_title {
+    font-size: 25px;
+  }
+  .reviews_contact_form p {
+    font-size: 14px;
+  }
+  .reviews_contact_form label {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
   .home {
     background: linear-gradient(90deg, #B7B3B5 0%, #C0B6B9 21.23%, #CBC2C5 50.84%, #BFBEC3 100%);
   }
@@ -1917,6 +2751,9 @@ address {
   .home .home_text h6 {
     font-size: 25px;
     margin-bottom: 24px;
+  }
+  .section_reviews .reviews_wrapper {
+    flex-direction: column-reverse;
   }
   .auth {
     padding-top: 100px;
@@ -1955,7 +2792,7 @@ address {
   .product_category_top .main_container .product_category_top_card p {
     margin-bottom: 16px;
   }
-  .product_category_top .main_container .product_category_top_card a {
+  .product_category_top .main_container .product_category_top_card button {
     padding-bottom: 238px;
   }
   .avalon_info .avalon_info_right .accent_btn {
@@ -1990,22 +2827,28 @@ address {
     margin-right: auto;
   }
   .comment .comment_right {
+    display: block;
     width: 100%;
-    height: 410px;
+    height: auto;
     padding: 40px 16px;
   }
   .comment .comment_right ul {
     margin-bottom: 32px;
   }
   .comment .comment_right .comment_from {
+    height: auto;
     flex-direction: column;
     gap: 16px;
   }
   .comment .comment_right .comment_from .input_light,
   .comment .comment_right .comment_from .accent_btn {
+    height: 44px;
     padding: 13px 13px;
     border-radius: 5px;
     width: 100%;
+  }
+  .comment .comment_right .comment_from .accent_btn {
+    padding: 10px 13px;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -2014,5 +2857,11 @@ address {
   }
   .contact_form .accent_btn {
     width: 100%;
+  }
+  .modal_contact {
+    width: 90%;
+  }
+  .modal_contact .modal_contact_left_content {
+    padding: 20px 30px 20px 20px;
   }
 }/*# sourceMappingURL=style.css.map */

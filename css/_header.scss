@@ -94,6 +94,11 @@
         font-size: 14px;
         font-weight: 500;
         line-height: normal;
+        @include transition;
+
+        &:hover {
+            box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+        }
 
         svg {
             path {
@@ -148,8 +153,10 @@
             line-height: normal;
         }
 
-        span {
-            width: 104px;
+        .contact_modal_open {
+            margin-top: 4px;
+            padding-bottom: 2px;
+            width: auto;
             margin-left: auto;
             color: $--Accent;
             font-size: 12px;
@@ -170,6 +177,11 @@
         border: 1px solid #F8F8F8;
         background-color: #F6F6F6FF;
         filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.10));
+        @include transition;
+
+        &:hover {
+            box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+        }
     }
 
     .phone_icon {
@@ -225,6 +237,7 @@
     }
 
     .menu_in {
+        height: calc(100vh - 101.6px);
         padding: 16px 10px 32px 10px;
         display: flex;
         flex-direction: column;
@@ -274,7 +287,7 @@
     }
 
     .menu_in_bottom {
-        margin-top: 189px;
+        margin-top: auto;
     }
 
     .menu_phone_btn {
@@ -296,3 +309,119 @@
 .menu_mobile.active {
     left: 0;
 }
+
+.modal_contact_bg {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(12.5px);
+}
+
+.modal_contact_bg.active {
+    display: block;
+}
+
+
+.modal_contact {
+    display: none;
+    width: 970px;
+    overflow: hidden;
+    position: fixed;
+    left: 50%;
+    z-index: 7;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px 10px 0 10px;
+    background: var(--Grey, linear-gradient(180deg, #FAFAFA 0%, #FAFAFA 100%));
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.25);
+
+    span {
+        color: $--Text;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 22px;
+        margin-bottom: 4px;
+    }
+
+    h2 {
+        color: $--Accent;
+        font-size: 45px;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 16px;
+    }
+
+    p {
+        color: $--Text;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 32px;
+    }
+}
+
+.modal_contact.active {
+    display: block;
+}
+
+.modal_contact_left_content {
+    max-width: 455px;
+    padding: 43px 0 43px 40px;
+}
+
+.modal_contact_wrapper {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+
+    .modal_contact_btn {
+        position: absolute;
+        right: 19px;
+        top: 19px;
+        background-color: $--Accent;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        @include flex-full-center;
+    }
+}
+
+.modal_contact_form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        color: $--Text;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+
+    .accent_btn {
+        margin-top: 14px;
+        width: 200px;
+        height: 40px;
+    }
+}
+
+.modal_contact_img {
+    img {
+        display: block;
+        height: 428px;
+        width: 445px;
+        transform: translateY(10px);
+        margin-top: 10px;
+        max-width: 445px;
+    }
+}
+
