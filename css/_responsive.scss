@@ -112,6 +112,10 @@
 
 @media only screen and (max-width: 992px) {
 
+    .reviews_contact_form {
+        width: 370px;
+    }
+
     .modal_contact {
         width: 400px;
 
@@ -660,6 +664,24 @@
             gap: 20px;
         }
     }
+
+    .section_reviews {
+
+        .home_title {
+            margin-top: 100px;
+        }
+        .reviews_left {
+            flex: auto;
+            .reviews_card {
+                width: calc(100%);
+            }
+        }
+
+        .reviews_right {
+            flex: auto;
+        }
+
+    }
     
     .footer {
         .under_container {
@@ -738,6 +760,28 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .reviews_contact_form {
+        width: 100%;
+        padding: 40px 15px;
+
+        h5 {
+            font-size: 14px;
+        }
+
+        .main_title {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        label {
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+    }
+    
     .home {
         background: linear-gradient(90deg, #B7B3B5 0%, #C0B6B9 21.23%, #CBC2C5 50.84%, #BFBEC3 100%);
         .homeSwiper {
@@ -772,6 +816,12 @@
                 font-size: 25px;
                 margin-bottom: 24px;
             }
+        }
+    }
+
+    .section_reviews {
+        .reviews_wrapper {
+            flex-direction: column-reverse;
         }
     }
 
