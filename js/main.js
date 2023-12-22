@@ -15,6 +15,19 @@
 //   e.preventDefault();
 // });
 // // input mask
+let comment_modal = document.querySelector('.product_description .comments_right')
+if (comment_modal) {
+  let open_comment_modal = document.querySelector('.product_description .show_comment');
+  let close_comment_modal = document.querySelector('.product_description .comments_right .comment_bg');
+  open_comment_modal.onclick = () => {
+    comment_modal.classList.add('active')
+  }
+
+  close_comment_modal.onclick = () => {
+    comment_modal.classList.remove('active');
+  }
+}
+
 let card_product_modal = document.querySelector('.card_product_home .checkbox_wrapper');
 if (card_product_modal) {
   let card_product_bn = document.querySelector('.card_product_home .checkbox_show')
