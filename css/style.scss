@@ -1454,6 +1454,7 @@ address {
     }
 
     .accardion_btn {
+        text-align: left;
         position: relative;
         width: 100%;
         @include flex-center;
@@ -1466,17 +1467,25 @@ address {
         border-bottom: 1px solid $--Black;
 
         .accardion_icon {
+            margin-left: 10px;
+            flex-shrink: 0;
             @include flex-full-center;
+
             .accardion_close {
-                opacity: 0;
                 display: none;
                 @include transition;
             }
 
+            .accardion_close.active {
+                display: block;
+            }
+
             .accardion_open {
-                // opacity: 0;
-                // display: none;
                 @include transition;
+            }
+
+            .accardion_open.active {
+                display: none;
             }
 
         }
@@ -2656,9 +2665,10 @@ address {
         .card_item {
             width: calc(25% - 90px / 4);
             display: block;
+            @include transition();
 
             &:hover {
-                border-radius: 20px;
+                border-radius: 10px;
                 background: linear-gradient(180deg, #FAFAFA 0%, #FAFAFA 100%), #D9D9D9;
                 box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
                 transform: scale(1.01);

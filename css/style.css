@@ -1230,6 +1230,7 @@ address {
   margin-bottom: 27px;
 }
 .about_accardion .accardion_btn {
+  text-align: left;
   position: relative;
   width: 100%;
   display: flex;
@@ -1243,17 +1244,24 @@ address {
   border-bottom: 1px solid #1B1B1B;
 }
 .about_accardion .accardion_btn .accardion_icon {
+  margin-left: 10px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .about_accardion .accardion_btn .accardion_icon .accardion_close {
-  opacity: 0;
   display: none;
   transition: 0.2s ease;
 }
+.about_accardion .accardion_btn .accardion_icon .accardion_close.active {
+  display: block;
+}
 .about_accardion .accardion_btn .accardion_icon .accardion_open {
   transition: 0.2s ease;
+}
+.about_accardion .accardion_btn .accardion_icon .accardion_open.active {
+  display: none;
 }
 .about_accardion .accordion-item-body-content {
   color: #404040;
@@ -2217,9 +2225,10 @@ address {
 .categories_cards .cards .card_item {
   width: calc(25% - 22.5px);
   display: block;
+  transition: 0.2s ease;
 }
 .categories_cards .cards .card_item:hover {
-  border-radius: 20px;
+  border-radius: 10px;
   background: linear-gradient(180deg, #FAFAFA 0%, #FAFAFA 100%), #D9D9D9;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
   transform: scale(1.01);
@@ -3827,7 +3836,7 @@ address {
     border-radius: 5.613px;
   }
   .categories_cards .cards .card_item_body {
-    padding: 0 5px 0 0;
+    padding: 5px 5px;
   }
   .categories_cards .cards .card_item_title {
     font-size: 12px;
@@ -3841,6 +3850,15 @@ address {
   }
   .card_product_home {
     margin-top: 80px;
+  }
+  .about_accardion .accardion_btn {
+    font-size: 18px;
+  }
+  .about_accardion .accardion_icon .accardion_open {
+    width: 25px;
+  }
+  .about_accardion .accardion_icon .accardion_close {
+    width: 25px;
   }
 }
 @media only screen and (max-height: 750px) and (max-width: 768px) {

@@ -1,20 +1,3 @@
-// input mask
-// let phoneInput = document.getElementById('phone');
-// let myForm = document.forms.myForm;
-// let result = document.getElementById('result');
-
-// phoneInput.addEventListener('input', function (e) {
-//     let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
-//     e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
-// });
-
-// myForm.addEventListener('submit', function(e) {
-//   phoneInput.value = phoneInput.value.replace(/\D/g, '');
-//   result.innerText = phoneInput.value; 
-
-//   e.preventDefault();
-// });
-// // input mask
 let comment_modal = document.querySelector('.product_description .comments_right')
 if (comment_modal) {
   let open_comment_modal = document.querySelector('.product_description .show_comment');
@@ -152,10 +135,18 @@ const items = document.querySelectorAll('.accordion');
 items.forEach((item) => {
   const header = item.querySelector('.accordion_btn');
   const content = item.querySelector('.accordion_body');
+  const accardion_close = item.querySelector('.accardion_close');
+  const accardion_open = item.querySelector('.accardion_open');
 
   header.addEventListener('click', () => {
     content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
   });
+  
+  header.addEventListener('click', () => {
+    accardion_close.classList.toggle('active');
+    accardion_open.classList.toggle('active');
+    
+  })
 });
 
 let tabs = document.querySelectorAll('.tab');
@@ -211,7 +202,6 @@ function handleCheckbox(el) {
 
 try {
   // burger
-
   let menu_bg = document.querySelector('.menu_bg');
   let menu_mobile = document.querySelector('.menu_mobile');
   let burger_open = document.querySelector('.burger_open');
@@ -227,7 +217,11 @@ try {
   });
 
   // burger
+} catch (err) {
+  console.log(err);
+}
 
+try {
   // contact_modal
   let contact_modal_open = document.querySelector('.contact_modal_open');
   let modal_contact_bg = document.querySelector('.modal_contact_bg');
@@ -249,7 +243,11 @@ try {
     modal_contact.classList.remove('active');
   });
   // contact_modal
+} catch (err) {
+  console.log(err);
+}
 
+try {
   // category_btn
   let catalog_content = document.querySelector('.catalog_content');
   let catalog_btn = document.querySelector('.catalog_btn');
@@ -273,100 +271,100 @@ try {
     catalog_content_bg.classList.remove('active');
   })
   // category_btn
-
-  // home swipper
-  let swiper_one = new Swiper(".homeSwiper", {
-    slidesPerView: "auto",
-    // effect: "fade",
-    navigation: {
-      nextEl: ".home_btn_right",
-      prevEl: ".home_btn_left",
-    },
-    pagination: {
-      el: ".home_swiper_pagination",
-      clickable: true,
-    },
-  });
-  // home swipper
-
-  // popular_product
-  let swiper_two = new Swiper(".popularSwiper", {
-    slidesPerView: 1.2,
-    spaceBetween: 20,
-    breakpoints: {
-      576: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-      992: {
-        slidesPerView: 4,
-        spaceBetween: 30,
-      }
-    },
-    navigation: {
-      nextEl: ".product_slider_next",
-      prevEl: ".product_slider_prev",
-    },
-  });
-  // popular_product
-
-
-  // about page
-  let swiper_three = new Swiper(".aboutSwiper", {
-    slidesPerView: 1.2,
-    spaceBetween: 20,
-    breakpoints: {
-      576: {
-        slidesPerView: 1,
-        spaceBetween: 30,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      }
-    },
-    navigation: {
-      nextEl: ".avalon_office_next",
-      prevEl: ".avalon_office_prev",
-    },
-  });
-  // about page
-
-  // commentSwiper
-  var swiper = new Swiper(".commentSwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  });
-  // commentSwiper
-
-  // input mask
-  let phoneInput = document.getElementById('phone');
-  let myForm = document.forms.myForm;
-  let result = document.getElementById('result');
-
-  phoneInput.addEventListener('input', function (e) {
-    let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
-    e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
-  });
-
-  myForm.addEventListener('submit', function (e) {
-    phoneInput.value = phoneInput.value.replace(/\D/g, '');
-    result.innerText = phoneInput.value;
-
-    e.preventDefault();
-  });
-  // input mask
-
 } catch (err) {
   console.log(err);
 }
 
+
+
+// home swipper
+let swiper_one = new Swiper(".homeSwiper", {
+  slidesPerView: "auto",
+  // effect: "fade",
+  navigation: {
+    nextEl: ".home_btn_right",
+    prevEl: ".home_btn_left",
+  },
+  pagination: {
+    el: ".home_swiper_pagination",
+    clickable: true,
+  },
+});
+// home swipper
+
+// popular_product
+let swiper_two = new Swiper(".popularSwiper", {
+  slidesPerView: 1.2,
+  spaceBetween: 20,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    }
+  },
+  navigation: {
+    nextEl: ".product_slider_next",
+    prevEl: ".product_slider_prev",
+  },
+});
+// popular_product
+
+
+// about page
+let swiper_three = new Swiper(".aboutSwiper", {
+  slidesPerView: 1.2,
+  spaceBetween: 20,
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    }
+  },
+  navigation: {
+    nextEl: ".avalon_office_next",
+    prevEl: ".avalon_office_prev",
+  },
+});
+// about page
+
+// commentSwiper
+var swiper = new Swiper(".commentSwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+// commentSwiper
+
+// input mask
+let phoneInput = document.getElementById('phone');
+let myForm = document.forms.myForm;
+let result = document.getElementById('result');
+
+phoneInput.addEventListener('input', function (e) {
+  let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+  e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+});
+
+myForm.addEventListener('submit', function (e) {
+  phoneInput.value = phoneInput.value.replace(/\D/g, '');
+  result.innerText = phoneInput.value;
+
+  e.preventDefault();
+});
+// input mask

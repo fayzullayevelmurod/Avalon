@@ -19,6 +19,43 @@
 <body>
 
     <div class="wrapper">
+        <!-- modal header -->
+        <div class="modal_contact_bg"></div>
+        <div class="modal_contact">
+            <div class="modal_contact_wrapper">
+                <button class="modal_contact_btn">
+                    <img src="./images/icons/modal_contact_close.svg" alt="">
+                </button>
+                <div class="modal_contact_left_content">
+                    <span>
+                        Хотите узнать больше о продукции?
+                    </span>
+                    <h2>
+                        Закажите звонок
+                    </h2>
+                    <p>
+                        Наши специалисты перезвонят и ответят на все Ваши вопросы
+                    </p>
+                    <form class="modal_contact_form" action="#" method="#">
+                        <label for="name">
+                            Ваше имя
+                        </label>
+                        <input class="input_light" id="name" type="text" placeholder="Иван Иванов">
+                        <label for="tel">
+                            Ваш телефон или почта
+                        </label>
+                        <input class="input_light" id="tel" type="text" placeholder="+7 (999) 999-99-99">
+                        <button type="submit" class="accent_btn">
+                            Заказать звонок
+                        </button>
+                    </form>
+                </div>
+                <div class="modal_contact_img">
+                    <img src="./images/modal_contact_img.png" alt="">
+                </div>
+            </div>
+        </div>  
+        <!-- modal header -->
 
         <!-- header -->
         <header class="header">
@@ -115,9 +152,9 @@
                         <a href="tel:+7903260176">
                             +7 (903) 226-01-76
                         </a>
-                        <span>
+                        <button class="contact_modal_open">
                             Заказать звонок
-                        </span>
+                        </button>
                     </div>
                     <a href="#" class="shop_icon">
                         <img src="./images/icons/shop_icon.svg" alt="">
@@ -232,6 +269,7 @@
         </div>
         <!-- menu media -->
         <!-- header -->
+
 
         <!-- about page -->
         <section class="about_home">
