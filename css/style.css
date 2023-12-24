@@ -2906,6 +2906,7 @@ address {
 .menu_mobile .menu_mobile_head {
   padding: 32px 10px 16px 10px;
   background: linear-gradient(180deg, #F8F8F8 0%, #F8F8F8 55.21%, #E9E9E9 100%), #D9D9D9;
+  position: relative;
 }
 .menu_mobile .menu_mobile_head h5 {
   color: #1B1B1B;
@@ -2920,6 +2921,15 @@ address {
   font-weight: 500;
   line-height: normal;
   text-decoration-line: underline;
+}
+.menu_mobile .menu_mobile_head .menu_close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.menu_mobile .menu_mobile_head .menu_close svg {
+  width: 30px;
+  height: auto;
 }
 .menu_mobile .menu_in {
   height: calc(100vh - 101.6px);
@@ -2957,7 +2967,7 @@ address {
   font-weight: 500;
   line-height: 24px;
 }
-.menu_mobile .catalog_dropdown_btn:hover .catalog_dropdown {
+.menu_mobile .catalog_dropdown_btn .catalog_dropdown.active {
   display: block;
 }
 .menu_mobile .menu_in_bottom {
@@ -3259,6 +3269,17 @@ address {
   .menu_bg.active,
   .menu_mobile {
     display: none;
+  }
+}
+@media only screen and (max-height: 850px) and (max-width: 1210px) {
+  .menu_mobile {
+    overflow-y: scroll;
+  }
+  .menu_mobile::-webkit-scrollbar {
+    display: none;
+  }
+  .menu_mobile .menu_in_bottom {
+    padding: 32px 0;
   }
 }
 @media only screen and (max-width: 1150px) {

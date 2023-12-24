@@ -110,6 +110,20 @@
     }
 }
 
+@media only screen and (max-height: 850px) and (max-width: 1210px) {
+    .menu_mobile {
+        overflow-y: scroll;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .menu_in_bottom {
+            padding: 32px 0;
+        }
+    }
+}
+
 @media only screen and (max-width: 1150px) {
     .basket {
         .home_title {

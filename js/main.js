@@ -212,6 +212,12 @@ try {
   let menu_bg = document.querySelector('.menu_bg');
   let menu_mobile = document.querySelector('.menu_mobile');
   let burger_open = document.querySelector('.burger_open');
+  let menu_close = document.querySelector('.menu_mobile .menu_close')
+
+  menu_close.onclick = () => {
+    menu_mobile.classList.remove('active');
+    menu_bg.classList.remove('active');
+  }
 
   burger_open.addEventListener('click', () => {
     menu_mobile.classList.add('active');
@@ -222,6 +228,12 @@ try {
     menu_mobile.classList.remove('active');
     menu_bg.classList.remove('active');
   });
+
+  let catalog_dropdown_button = document.querySelector('.catalog_dropdown_button');
+  catalog_dropdown_button.onclick = e => {
+    e.preventDefault();
+    document.querySelector('.catalog_dropdown_btn .catalog_dropdown').classList.toggle('active')
+  }
 
   // burger
 } catch (err) {
