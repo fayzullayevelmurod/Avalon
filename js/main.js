@@ -375,8 +375,9 @@ if ($('input[type="tel"]').length) {
   $('input[type="tel"]').attr("autocomplete", "off");
 }
 
+let award_img = document.querySelectorAll('.card_product_home .main_slider .swiper-slide img');
+
 function createLightGallery () {
-  let award_img = document.querySelectorAll('.card_product_home .main_slider .swiper-slide img');
   if (award_img.length) {
       award_img.forEach((img, idx) => {
           img.onclick = () => {
@@ -402,4 +403,16 @@ function createLightGallery () {
   }
 }
 
-createLightGallery();
+if (award_img.length) {
+  createLightGallery();
+}
+
+
+
+let left_block_head = document.querySelector('.left_block_head .amount a');
+
+if (left_block_head) {
+  left_block_head.onclick = () => {
+    document.querySelectorAll('.product_description .tab_head button')[1].click()
+  }
+}

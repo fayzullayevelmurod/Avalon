@@ -939,16 +939,18 @@
                 }
 
                 &_title {
-                    font-size: 12px;
+                    // font-size: 12px;
                 }
 
                 &_amount {
-                    font-size: 8px;
+                    // font-size: 8px;
+                    align-items: start;
+                    flex-direction: column;
                     margin-bottom: 8px;
                 }
 
                 &_price {
-                    font-size: 14px;
+                    // font-size: 14px;
                 }
             }
         }
@@ -1194,22 +1196,22 @@
             background: transparent;
 
             .subtitle {
-                // font-size: 12px;
+                font-size: 12px;
             }
 
             h1 {
-                // font-size: 30px;
+                font-size: 30px;
             }
 
             .amount {
-                // font-size: 10px;
+                font-size: 10px;
                 margin-bottom: 0px;
             }
 
             .dimensions {
                 flex-wrap: wrap;
-                // font-size: 12px;
-                // line-height: 18px;
+                font-size: 12px;
+                line-height: 18px;
                 gap: 5px 16px;
                 margin-bottom: 0;
 
@@ -1301,8 +1303,13 @@
                 .price {
                     width: 100%;
                     display: flex;
-                    justify-content: space-between;
+                    gap: 10px;
+                    // justify-content: space-between;
                     margin-bottom: 10px;
+                }
+
+                .price_top span:nth-child(1) {
+                    font-size: 30px;
                 }
 
                 &_right {
@@ -1449,7 +1456,7 @@
             flex-direction: column;
             gap: 16px;
 
-            a {
+            iframe {
                 width: 100%;
             }
 
