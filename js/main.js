@@ -49,15 +49,22 @@ if (card_product_slide) {
       swiper: project_main_slider,
     },
   });
+
+  project_mini_slider.on('slideChange', function () {
+    createLightGallery();
+  });
 }
 
-let category_sort_btns = document.querySelectorAll('.categories_cards .accordion .sort_btn');
+let category_sort_btns = document.querySelectorAll('.categories_cards .accordions .sort_btn');
 if (category_sort_btns.length) {
   category_sort_btns.forEach(btn => {
     btn.onclick = () => {
       btn.classList.toggle('active')
     }
   })
+  document.querySelector('.categories_cards .accordions .accordion_btn').onclick = () => {
+    document.querySelector('.categories_cards .accordions').classList.add('active')
+  }
 }
 
 let dropdowns = document.querySelectorAll('.dropdown');
@@ -141,18 +148,18 @@ items.forEach((item) => {
   header.addEventListener('click', () => {
     content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
   });
-  
+
   header.addEventListener('click', () => {
     accardion_close.classList.toggle('active');
     accardion_open.classList.toggle('active');
-    
+
   })
 });
 
 let tabs = document.querySelectorAll('.tab');
 if (tabs.length) {
   tabs.forEach(tab => {
-    let tab_btns = tab.querySelectorAll('button');
+    let tab_btns = tab.querySelectorAll('.tab_head button');
     let tab_items = tab.querySelectorAll('.tab_item');
     tab_btns.forEach((tab_btn, btn_idx) => {
       tab_btn.onclick = () => {
@@ -351,20 +358,36 @@ var swiper = new Swiper(".commentSwiper", {
 });
 // commentSwiper
 
-// input mask
-let phoneInput = document.getElementById('phone');
-let myForm = document.forms.myForm;
-let result = document.getElementById('result');
+if ($('input[type="tel"]').length) {
+  $('input[type="tel"]').inputmask({"mask": "+7 (999) 999-99-99"})
+  $('input[type="tel"]').attr("autocomplete", "off");
+}
 
-phoneInput.addEventListener('input', function (e) {
-  let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
-  e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
-});
+function createLightGallery () {
+  let award_img = document.querySelectorAll('.card_product_home .main_slider .swiper-slide img');
+  if (award_img.length) {
+      award_img.forEach((img, idx) => {
+          img.onclick = () => {
+              let src = [];
+              award_img.forEach(item => {
+                  src.push({
+                      'src': item.getAttribute('src'),
+                      'thumb': item.getAttribute('src'),
+                      'subHtml': ''
+                  });
+              })
+              $('#lightgallery').remove();
+              const galleryContainer = document.createElement('div');
+              galleryContainer.id = 'lightgallery';
+              document.body.appendChild(galleryContainer);
+              lightGallery(galleryContainer, {
+                  dynamic: true,
+                  dynamicEl: src,
+                  index: idx
+              });
+          }
+      })
+  }
+}
 
-myForm.addEventListener('submit', function (e) {
-  phoneInput.value = phoneInput.value.replace(/\D/g, '');
-  result.innerText = phoneInput.value;
-
-  e.preventDefault();
-});
-// input mask
+createLightGallery();

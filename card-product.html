@@ -6,6 +6,7 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- fonts -->
     <!-- swiper js -->
@@ -45,7 +46,7 @@
                         <label for="tel">
                             Ваш телефон или почта
                         </label>
-                        <input class="input_light" id="tel" type="text" placeholder="+7 (999) 999-99-99">
+                        <input class="input_light" id="tel" type="tel" placeholder="+7 (999) 999-99-99">
                         <button type="submit" class="accent_btn">
                             Заказать звонок
                         </button>
@@ -325,15 +326,6 @@
                             <span>000000000</span>
                             <a href="#">128 отзывов</a>
                         </div>
-                        <div class="meida_price">
-                            <div class="price_top">
-                                <span>2 800 </span>
-                                <span>₽</span>
-                                <span>300 </span>
-                                <span>₽/шт</span>
-                            </div>
-                            <div class="subtitle_2">Минимальный заказ 10 шт</div>
-                        </div>
                     </div>
                     <div class="size">
                         <div class="title">Размеры:</div>
@@ -583,169 +575,166 @@
         <!-- Card prouduct home end -->
 
         <div class="product_description">
-            <div class="main_container product_description_head">
-                <h2>Описание</h2>
-                <a href="#">Отзывы</a>
-                <a href="#">Видео</a>
-            </div>
-            <div class="main_container description">
-                <p>
-                    Fresh splashes это картина ярких эмоций. Отличный подарок для молодых и энергичных. Не думайте, что картина подойдет только для кухни, она найдет свое место и в гостиной, и в кабинете, и даже в офисе. 
-                    Картина марки AvalonDecor разделена на три одинаковые части (лучшее расстояние между ними 2.5 см), каждая выполнена на холсте посредством высококачественной печати. 
-                    Холст натягивается на деревянный подрамник. Для удобного размещения в комплекте предусмотрены крепления на стену. Общий размер картины 125х60 см. (с учетом расстояния между сегментами 2,5 см.) Размер сегментов 40х60см, 40х60 см, 40х60см.
-                </p>
-            </div>
-            <div class="main_container product_description_head two">
-                <a href="#">Описание</a>
-                <h2>Отзывы</h2>
-                <a href="#">Видео</a>
-            </div>
-            <div class="main_container comments">
-                <button class="show_comment accent_btn">Оставить отзыв</button>
-                <div class="comments_left">
-                    <div class="comment_item">
-                        <div class="comment_item_head">
-                            <div class="name">Мария</div>
-                            <div class="date">
-                                <img src="./images/icons/stars.svg" alt="">
-                                <span>20.11.2023</span>
-                            </div>
-                        </div>
-                        <div class="comment_item_body">
-                            Картина очень красивая , прям как на фото , цвета не тусклые )) брала на подарок маме  , как увидела в пункте самовывоза , сразу решила забрать ))) Мама очень довольна , осталась в полном восторге ))
+            <div class="tab">
+                <div class="main_container product_description_head tab_head">
+                    <button class="active">Описание</button>
+                    <button>Отзывы</button>
+                    <button>Видео</button>
+                </div>
+                <div class="tab_body">
+                    <div class="tab_item active">
+                        <div class="main_container description">
+                            <p>
+                                Fresh splashes это картина ярких эмоций. Отличный подарок для молодых и энергичных. Не думайте, что картина подойдет только для кухни, она найдет свое место и в гостиной, и в кабинете, и даже в офисе. 
+                                Картина марки AvalonDecor разделена на три одинаковые части (лучшее расстояние между ними 2.5 см), каждая выполнена на холсте посредством высококачественной печати. 
+                                Холст натягивается на деревянный подрамник. Для удобного размещения в комплекте предусмотрены крепления на стену. Общий размер картины 125х60 см. (с учетом расстояния между сегментами 2,5 см.) Размер сегментов 40х60см, 40х60 см, 40х60см.
+                            </p>
                         </div>
                     </div>
-                    <div class="comment_item">
-                        <div class="comment_item_head">
-                            <div class="name">Мария</div>
-                            <div class="date">
-                                <img src="./images/icons/stars.svg" alt="">
-                                <span>20.11.2023</span>
+                    <div class="tab_item">
+                        <div class="main_container comments">
+                            <button class="show_comment accent_btn">Оставить отзыв</button>
+                            <div class="comments_left">
+                                <div class="comment_item">
+                                    <div class="comment_item_head">
+                                        <div class="name">Мария</div>
+                                        <div class="date">
+                                            <img src="./images/icons/stars.svg" alt="">
+                                            <span>20.11.2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="comment_item_body">
+                                        Картина очень красивая , прям как на фото , цвета не тусклые )) брала на подарок маме  , как увидела в пункте самовывоза , сразу решила забрать ))) Мама очень довольна , осталась в полном восторге ))
+                                    </div>
+                                </div>
+                                <div class="comment_item">
+                                    <div class="comment_item_head">
+                                        <div class="name">Мария</div>
+                                        <div class="date">
+                                            <img src="./images/icons/stars.svg" alt="">
+                                            <span>20.11.2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="comment_item_body">
+                                        Картина очень красивая , прям как на фото , цвета не тусклые )) брала на подарок маме  , как увидела в пункте самовывоза , сразу решила забрать ))) Мама очень довольна , осталась в полном восторге ))
+                                    </div>
+                                </div>
+                                <div class="comment_item">
+                                    <div class="comment_item_head">
+                                        <div class="name">Мария</div>
+                                        <div class="date">
+                                            <img src="./images/icons/stars.svg" alt="">
+                                            <span>20.11.2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="comment_item_body">
+                                        Картина очень красивая , прям как на фото , цвета не тусклые )) брала на подарок маме  , как увидела в пункте самовывоза , сразу решила забрать ))) Мама очень довольна , осталась в полном восторге ))
+                                    </div>
+                                </div>
+                                <div class="comment_item">
+                                    <div class="comment_item_head">
+                                        <div class="name">Мария</div>
+                                        <div class="date">
+                                            <img src="./images/icons/stars.svg" alt="">
+                                            <span>20.11.2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="comment_item_body">
+                                        Картина очень красивая , прям как на фото , цвета не тусклые )) брала на подарок маме  , как увидела в пункте самовывоза , сразу решила забрать ))) Мама очень довольна , осталась в полном восторге ))
+                                    </div>
+                                </div>
+                                <div class="comment_item">
+                                    <div class="comment_item_head">
+                                        <div class="name">Мария</div>
+                                        <div class="date">
+                                            <img src="./images/icons/stars.svg" alt="">
+                                            <span>20.11.2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="comment_item_body">
+                                        Картина очень красивая , прям как на фото , цвета не тусклые )) брала на подарок маме  , как увидела в пункте самовывоза , сразу решила забрать ))) Мама очень довольна , осталась в полном восторге ))
+                                    </div>
+                                </div>
+                                <div class="comment_item">
+                                    <div class="comment_item_head">
+                                        <div class="name">Мария</div>
+                                        <div class="date">
+                                            <img src="./images/icons/stars.svg" alt="">
+                                            <span>20.11.2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="comment_item_body">
+                                        Картина очень красивая , прям как на фото , цвета не тусклые )) брала на подарок маме  , как увидела в пункте самовывоза , сразу решила забрать ))) Мама очень довольна , осталась в полном восторге ))
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="comment_item_body">
-                            Картина очень красивая , прям как на фото , цвета не тусклые )) брала на подарок маме  , как увидела в пункте самовывоза , сразу решила забрать ))) Мама очень довольна , осталась в полном восторге ))
+                            <div class="comments_right">
+                                <div class="comment_bg"></div>
+                                <div class="reviews_contact_form">
+                                    <h5>
+                                        Уже покупали у нас?
+                                    </h5>
+                                    <h2 class="main_title">
+                                        Оставьте отзыв
+                                    </h2>
+                                    <p>
+                                        Своим отзывом вы поможете нам и другим покупателям сделать свой интерьер лучше
+                                    </p>
+                                    <form action="#" class="form">
+                                        <label for="name">
+                                            Ваше имя
+                                        </label>
+                                        <input type="text" class="input_light" placeholder="Иван Иванов">
+                                        <label for="email">
+                                            Ваш телефон или почта
+                                        </label>
+                                        <input type="tel" class="input_light" placeholder="+7 (999) 999-99-99">
+                                        <label for="">
+                                            Ваша оценка
+                                        </label>
+                                        <div class="star">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M19.0988 1.82607C19.4674 1.07911 20.5326 1.07911 20.9012 1.82607L25.644 11.436C25.7904 11.7327 26.0734 11.9382 26.4007 11.9858L37.0059 13.5268C37.8303 13.6466 38.1594 14.6596 37.5629 15.2411L29.8889 22.7214C29.6521 22.9523 29.544 23.2849 29.5999 23.6109L31.4115 34.1733C31.5523 34.9943 30.6906 35.6204 29.9533 35.2327L20.4677 30.2459C20.1749 30.0919 19.8251 30.0919 19.5323 30.2459L10.0467 35.2327C9.30944 35.6204 8.44772 34.9943 8.58853 34.1733L10.4001 23.6109C10.456 23.2849 10.3479 22.9523 10.1111 22.7214L2.43707 15.2411C1.84059 14.6596 2.16974 13.6466 2.99406 13.5268L13.5993 11.9858C13.9266 11.9382 14.2096 11.7326 14.356 11.436L19.0988 1.82607Z" fill="#CECECE"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M19.0988 1.82607C19.4674 1.07911 20.5326 1.07911 20.9012 1.82607L25.644 11.436C25.7904 11.7327 26.0734 11.9382 26.4007 11.9858L37.0059 13.5268C37.8303 13.6466 38.1594 14.6596 37.5629 15.2411L29.8889 22.7214C29.6521 22.9523 29.544 23.2849 29.5999 23.6109L31.4115 34.1733C31.5523 34.9943 30.6906 35.6204 29.9533 35.2327L20.4677 30.2459C20.1749 30.0919 19.8251 30.0919 19.5323 30.2459L10.0467 35.2327C9.30944 35.6204 8.44772 34.9943 8.58853 34.1733L10.4001 23.6109C10.456 23.2849 10.3479 22.9523 10.1111 22.7214L2.43707 15.2411C1.84059 14.6596 2.16974 13.6466 2.99406 13.5268L13.5993 11.9858C13.9266 11.9382 14.2096 11.7326 14.356 11.436L19.0988 1.82607Z" fill="#CECECE"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M19.0988 1.82607C19.4674 1.07911 20.5326 1.07911 20.9012 1.82607L25.644 11.436C25.7904 11.7327 26.0734 11.9382 26.4007 11.9858L37.0059 13.5268C37.8303 13.6466 38.1594 14.6596 37.5629 15.2411L29.8889 22.7214C29.6521 22.9523 29.544 23.2849 29.5999 23.6109L31.4115 34.1733C31.5523 34.9943 30.6906 35.6204 29.9533 35.2327L20.4677 30.2459C20.1749 30.0919 19.8251 30.0919 19.5323 30.2459L10.0467 35.2327C9.30944 35.6204 8.44772 34.9943 8.58853 34.1733L10.4001 23.6109C10.456 23.2849 10.3479 22.9523 10.1111 22.7214L2.43707 15.2411C1.84059 14.6596 2.16974 13.6466 2.99406 13.5268L13.5993 11.9858C13.9266 11.9382 14.2096 11.7326 14.356 11.436L19.0988 1.82607Z" fill="#CECECE"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M19.0988 1.82607C19.4674 1.07911 20.5326 1.07911 20.9012 1.82607L25.644 11.436C25.7904 11.7327 26.0734 11.9382 26.4007 11.9858L37.0059 13.5268C37.8303 13.6466 38.1594 14.6596 37.5629 15.2411L29.8889 22.7214C29.6521 22.9523 29.544 23.2849 29.5999 23.6109L31.4115 34.1733C31.5523 34.9943 30.6906 35.6204 29.9533 35.2327L20.4677 30.2459C20.1749 30.0919 19.8251 30.0919 19.5323 30.2459L10.0467 35.2327C9.30944 35.6204 8.44772 34.9943 8.58853 34.1733L10.4001 23.6109C10.456 23.2849 10.3479 22.9523 10.1111 22.7214L2.43707 15.2411C1.84059 14.6596 2.16974 13.6466 2.99406 13.5268L13.5993 11.9858C13.9266 11.9382 14.2096 11.7326 14.356 11.436L19.0988 1.82607Z" fill="#CECECE"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M19.0988 1.82607C19.4674 1.07911 20.5326 1.07911 20.9012 1.82607L25.644 11.436C25.7904 11.7327 26.0734 11.9382 26.4007 11.9858L37.0059 13.5268C37.8303 13.6466 38.1594 14.6596 37.5629 15.2411L29.8889 22.7214C29.6521 22.9523 29.544 23.2849 29.5999 23.6109L31.4115 34.1733C31.5523 34.9943 30.6906 35.6204 29.9533 35.2327L20.4677 30.2459C20.1749 30.0919 19.8251 30.0919 19.5323 30.2459L10.0467 35.2327C9.30944 35.6204 8.44772 34.9943 8.58853 34.1733L10.4001 23.6109C10.456 23.2849 10.3479 22.9523 10.1111 22.7214L2.43707 15.2411C1.84059 14.6596 2.16974 13.6466 2.99406 13.5268L13.5993 11.9858C13.9266 11.9382 14.2096 11.7326 14.356 11.436L19.0988 1.82607Z" fill="#CECECE"/>
+                                            </svg>
+                                        </div>
+            
+                                        <label for="textarea">
+                                            Текст отзыва
+                                        </label>
+            
+                                        <textarea class="" name="textarea" id="textarea" placeholder="Опишите в несколько предложений"></textarea>
+                                        <button class="accent_btn">
+                                            Оставить отзыв
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="comment_item">
-                        <div class="comment_item_head">
-                            <div class="name">Мария</div>
-                            <div class="date">
-                                <img src="./images/icons/stars.svg" alt="">
-                                <span>20.11.2023</span>
-                            </div>
-                        </div>
-                        <div class="comment_item_body">
-                            Картина очень красивая , прям как на фото , цвета не тусклые )) брала на подарок маме  , как увидела в пункте самовывоза , сразу решила забрать ))) Мама очень довольна , осталась в полном восторге ))
-                        </div>
-                    </div>
-                    <div class="comment_item">
-                        <div class="comment_item_head">
-                            <div class="name">Мария</div>
-                            <div class="date">
-                                <img src="./images/icons/stars.svg" alt="">
-                                <span>20.11.2023</span>
-                            </div>
-                        </div>
-                        <div class="comment_item_body">
-                            Картина очень красивая , прям как на фото , цвета не тусклые )) брала на подарок маме  , как увидела в пункте самовывоза , сразу решила забрать ))) Мама очень довольна , осталась в полном восторге ))
-                        </div>
-                    </div>
-                    <div class="comment_item">
-                        <div class="comment_item_head">
-                            <div class="name">Мария</div>
-                            <div class="date">
-                                <img src="./images/icons/stars.svg" alt="">
-                                <span>20.11.2023</span>
-                            </div>
-                        </div>
-                        <div class="comment_item_body">
-                            Картина очень красивая , прям как на фото , цвета не тусклые )) брала на подарок маме  , как увидела в пункте самовывоза , сразу решила забрать ))) Мама очень довольна , осталась в полном восторге ))
-                        </div>
-                    </div>
-                    <div class="comment_item">
-                        <div class="comment_item_head">
-                            <div class="name">Мария</div>
-                            <div class="date">
-                                <img src="./images/icons/stars.svg" alt="">
-                                <span>20.11.2023</span>
-                            </div>
-                        </div>
-                        <div class="comment_item_body">
-                            Картина очень красивая , прям как на фото , цвета не тусклые )) брала на подарок маме  , как увидела в пункте самовывоза , сразу решила забрать ))) Мама очень довольна , осталась в полном восторге ))
+                    <div class="tab_item">
+                        <div class="main_container videos">
+                            <a href="#">
+                                <img src="./images/product_video_img.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/product_video_img.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="comments_right">
-                    <div class="comment_bg"></div>
-                    <div class="reviews_contact_form">
-                        <h5>
-                            Уже покупали у нас?
-                        </h5>
-                        <h2 class="main_title">
-                            Оставьте отзыв
-                        </h2>
-                        <p>
-                            Своим отзывом вы поможете нам и другим покупателям сделать свой интерьер лучше
-                        </p>
-                        <form action="#" class="form">
-                            <label for="name">
-                                Ваше имя
-                            </label>
-                            <input type="text" class="input_light" placeholder="Иван Иванов">
-                            <label for="email">
-                                Ваш телефон или почта
-                            </label>
-                            <input type="email" class="input_light" placeholder="+7 (999) 999-99-99">
-                            <label for="">
-                                Ваша оценка
-                            </label>
-                            <div class="star">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                    <path d="M19.0988 1.82607C19.4674 1.07911 20.5326 1.07911 20.9012 1.82607L25.644 11.436C25.7904 11.7327 26.0734 11.9382 26.4007 11.9858L37.0059 13.5268C37.8303 13.6466 38.1594 14.6596 37.5629 15.2411L29.8889 22.7214C29.6521 22.9523 29.544 23.2849 29.5999 23.6109L31.4115 34.1733C31.5523 34.9943 30.6906 35.6204 29.9533 35.2327L20.4677 30.2459C20.1749 30.0919 19.8251 30.0919 19.5323 30.2459L10.0467 35.2327C9.30944 35.6204 8.44772 34.9943 8.58853 34.1733L10.4001 23.6109C10.456 23.2849 10.3479 22.9523 10.1111 22.7214L2.43707 15.2411C1.84059 14.6596 2.16974 13.6466 2.99406 13.5268L13.5993 11.9858C13.9266 11.9382 14.2096 11.7326 14.356 11.436L19.0988 1.82607Z" fill="#CECECE"/>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                    <path d="M19.0988 1.82607C19.4674 1.07911 20.5326 1.07911 20.9012 1.82607L25.644 11.436C25.7904 11.7327 26.0734 11.9382 26.4007 11.9858L37.0059 13.5268C37.8303 13.6466 38.1594 14.6596 37.5629 15.2411L29.8889 22.7214C29.6521 22.9523 29.544 23.2849 29.5999 23.6109L31.4115 34.1733C31.5523 34.9943 30.6906 35.6204 29.9533 35.2327L20.4677 30.2459C20.1749 30.0919 19.8251 30.0919 19.5323 30.2459L10.0467 35.2327C9.30944 35.6204 8.44772 34.9943 8.58853 34.1733L10.4001 23.6109C10.456 23.2849 10.3479 22.9523 10.1111 22.7214L2.43707 15.2411C1.84059 14.6596 2.16974 13.6466 2.99406 13.5268L13.5993 11.9858C13.9266 11.9382 14.2096 11.7326 14.356 11.436L19.0988 1.82607Z" fill="#CECECE"/>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                    <path d="M19.0988 1.82607C19.4674 1.07911 20.5326 1.07911 20.9012 1.82607L25.644 11.436C25.7904 11.7327 26.0734 11.9382 26.4007 11.9858L37.0059 13.5268C37.8303 13.6466 38.1594 14.6596 37.5629 15.2411L29.8889 22.7214C29.6521 22.9523 29.544 23.2849 29.5999 23.6109L31.4115 34.1733C31.5523 34.9943 30.6906 35.6204 29.9533 35.2327L20.4677 30.2459C20.1749 30.0919 19.8251 30.0919 19.5323 30.2459L10.0467 35.2327C9.30944 35.6204 8.44772 34.9943 8.58853 34.1733L10.4001 23.6109C10.456 23.2849 10.3479 22.9523 10.1111 22.7214L2.43707 15.2411C1.84059 14.6596 2.16974 13.6466 2.99406 13.5268L13.5993 11.9858C13.9266 11.9382 14.2096 11.7326 14.356 11.436L19.0988 1.82607Z" fill="#CECECE"/>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                    <path d="M19.0988 1.82607C19.4674 1.07911 20.5326 1.07911 20.9012 1.82607L25.644 11.436C25.7904 11.7327 26.0734 11.9382 26.4007 11.9858L37.0059 13.5268C37.8303 13.6466 38.1594 14.6596 37.5629 15.2411L29.8889 22.7214C29.6521 22.9523 29.544 23.2849 29.5999 23.6109L31.4115 34.1733C31.5523 34.9943 30.6906 35.6204 29.9533 35.2327L20.4677 30.2459C20.1749 30.0919 19.8251 30.0919 19.5323 30.2459L10.0467 35.2327C9.30944 35.6204 8.44772 34.9943 8.58853 34.1733L10.4001 23.6109C10.456 23.2849 10.3479 22.9523 10.1111 22.7214L2.43707 15.2411C1.84059 14.6596 2.16974 13.6466 2.99406 13.5268L13.5993 11.9858C13.9266 11.9382 14.2096 11.7326 14.356 11.436L19.0988 1.82607Z" fill="#CECECE"/>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                    <path d="M19.0988 1.82607C19.4674 1.07911 20.5326 1.07911 20.9012 1.82607L25.644 11.436C25.7904 11.7327 26.0734 11.9382 26.4007 11.9858L37.0059 13.5268C37.8303 13.6466 38.1594 14.6596 37.5629 15.2411L29.8889 22.7214C29.6521 22.9523 29.544 23.2849 29.5999 23.6109L31.4115 34.1733C31.5523 34.9943 30.6906 35.6204 29.9533 35.2327L20.4677 30.2459C20.1749 30.0919 19.8251 30.0919 19.5323 30.2459L10.0467 35.2327C9.30944 35.6204 8.44772 34.9943 8.58853 34.1733L10.4001 23.6109C10.456 23.2849 10.3479 22.9523 10.1111 22.7214L2.43707 15.2411C1.84059 14.6596 2.16974 13.6466 2.99406 13.5268L13.5993 11.9858C13.9266 11.9382 14.2096 11.7326 14.356 11.436L19.0988 1.82607Z" fill="#CECECE"/>
-                                </svg>
-                            </div>
 
-                            <label for="textarea">
-                                Текст отзыва
-                            </label>
-
-                            <textarea class="" name="textarea" id="textarea" placeholder="Опишите в несколько предложений"></textarea>
-                            <button class="accent_btn">
-                                Оставить отзыв
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="main_container product_description_head three">
-                <a href="#">Описание</a>
-                <a href="#">Отзывы</a>
-                <h2>Видео</h2>
-            </div>
-            <div class="main_container videos">
-                <a href="#">
-                    <img src="./images/product_video_img.png" alt="">
-                </a>
-                <a href="#">
-                    <img src="./images/product_video_img.png" alt="">
-                </a>
-                <div class="media_btns">
-                    <button class="accent_btn">Купить оптом</button>
-                    <button class="light_btn">Купить штучно</button>
-                </div>
             </div>
         </div>
 
@@ -966,9 +955,22 @@
     </div>
 
 
+    <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- swiper js -->
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery -->
+    <!-- input mask -->
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
+    <!-- input mask -->
     <!-- main js -->
     <script src="./js/main.js"></script>
     <!-- main js -->

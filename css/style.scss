@@ -87,6 +87,10 @@ address {
     overflow: hidden;
 }
 
+.wrapper_basket {
+    overflow: visible;
+}
+
 .under_container {
     max-width: 1340px;
     padding: 0 10px;
@@ -1222,16 +1226,10 @@ address {
         justify-content: space-between;
     }
 
-    a.map {
+    .map {
         border-radius: 10px;
         box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
         overflow: hidden;
-
-        img {
-            height: 425px;
-            width: 100%;
-            object-fit: cover;
-        }
     }
     
     address {
@@ -2216,7 +2214,7 @@ address {
 
 // Basket
 .basket {
-    margin: 52px 0 56px;
+    padding: 52px 0 56px;
 
     .main_container {
         display: flex;
@@ -2448,7 +2446,7 @@ address {
             font-weight: 700;
         }
     }
-
+    
     &_right_block {
         border-radius: 10px;
         background: var(--Grey, linear-gradient(180deg, #FAFAFA 0%, #FAFAFA 100%));
@@ -2480,6 +2478,19 @@ address {
             line-height: normal;
         }
     }
+
+    &_right_block:not(.mobile) {
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        position: sticky;
+        top: 100px;
+    }
+
+    &_right_block.mobile {
+        display: none;
+    }
 }
 // Basket end
 
@@ -2505,7 +2516,7 @@ address {
 
 // Categories cards
 .categories_cards {
-    .accordion {
+    .accordions {
         margin-bottom: 50px;
 
         .sort_btn {
@@ -2524,6 +2535,10 @@ address {
 
             span {
                 color: rgba(64, 64, 64, 0.50);
+            }
+            
+            &:nth-child(n+8) {
+                display: none;
             }
         }
 
@@ -2556,7 +2571,7 @@ address {
         &_head {
             display: flex;
             align-items: center;
-            gap: 16px;
+            gap: 19px 16px;
 
             &_wrap {
                 overflow-x: scroll;
@@ -2566,14 +2581,19 @@ address {
                 }
             }
         }
+    }
 
-        &_body {
-            &_in {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: flex-start;
-                gap: 19px 16px;
-                padding-top: 50px;
+    .accordions.active {
+        .sort_btn {
+            display: block !important;
+        }
+
+        .accordions_head {
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+            &_wrap {
+                overflow-x: visible;
             }
         }
     }
@@ -3118,14 +3138,14 @@ address {
     align-items: flex-end;
     gap: 26px;
 
-    h2 {
+    button.active {
         color: $--Black;
         font-size: 32px;
         font-weight: 600;
         line-height: normal;
     }
 
-    a {
+    button:not(.active) {
         color: $--Black;
         font-size: 20px;
         font-weight: 500;
